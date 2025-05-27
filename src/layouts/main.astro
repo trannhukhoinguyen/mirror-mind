@@ -4,6 +4,7 @@ import { SITE } from '@/consts'
 import SEO from '@/components/flow/schema.astro';
 import Anti from '@/javascript/anticopy.astro';
 import Head from '@/components/Head.astro'
+import Navbar from '@/components/react/navbar'
 
 import '@/assets/tailwind.css';
 import '@/styles/global.css'
@@ -15,14 +16,15 @@ import '@/styles/typography.css'
 
 <html lang={SITE.locale}>
 
-	<Head>
+	<head>
 
+    <meta charset="utf-8" />
 		<SEO/>
 
-	</Head>
+	</head>
 
 	<body class="antialiased text-default bg-page tracking-tight">
-
+    <Navbar client:load />
 		<slot/>
 
 		<!--

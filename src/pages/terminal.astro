@@ -1,10 +1,14 @@
 ---
-import Layout from '@/layouts/main.astro';
+import TerminalLayout from '@/layouts/main.astro';
+import PageHead from '@/components/PageHead.astro'
 import MindFlow from '@/components/flow/terminal.astro';
+
+const title = "Practise Patriarchal Zen";
 ---
 
-<Layout>
+<TerminalLayout>
+  <PageHead slot="head" title={title} />
 
-  <MindFlow />
+  <MindFlow class="mt-32" />
 
-</Layout>
+</TerminalLayout>
