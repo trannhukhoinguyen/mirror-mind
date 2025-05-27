@@ -10,18 +10,24 @@ import '@/assets/tailwind.css';
 import '@/styles/global.css'
 import '@/styles/typography.css'
 
+const { title = SITE.title, description = SITE.description } = Astro.props
 ---
 
 <!DOCTYPE html>
 
 <html lang={SITE.locale}>
 
-	<head>
+	<head title={title}>
 
     <meta charset="utf-8" />
 		<SEO/>
 
 	</head>
+  <Head>
+
+		<SEO/>
+
+	</Head>
 
 	<body class="antialiased text-default bg-page tracking-tight">
     <Navbar client:load />
