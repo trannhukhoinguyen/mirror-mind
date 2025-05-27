@@ -23,10 +23,6 @@ export const NAV_LINKS: SocialLink[] = [
     href: '/blog',
     label: 'blog',
   },
-  {
-    href: '/terminal',
-    label: 'terminal',
-  },
 ]
 
 export const SOCIAL_LINKS: SocialLink[] = [
@@ -79,28 +75,26 @@ export type Technologies = {
 
 export const technologies: Technologies = {
   'Sắc Ấm': [
-    { text: 'HTML', logo: 'mdi:language-html5' },
-    { text: 'JavaScript', logo: 'mdi:language-javascript' },
-    { text: 'CSS', logo: 'mdi:language-css3' },
-    { text: 'PHP', logo: 'mdi:language-php' },
-    { text: 'Astro', logo: 'simple-icons:astro' },
-    { text: 'Tailwind CSS', logo: 'mdi:tailwind' },
+    { text: 'Phá Ngã Chấp', logo: 'mdi:language-html5' },
+    { text: 'Phá Nhân Chấp', logo: 'mdi:language-javascript' },
+    { text: 'Phá Chúng Sanh Chấp', logo: 'mdi:language-css3' },
+    { text: 'Phá Thọ Giả Chấp', logo: 'mdi:language-php' },
   ],
   'Thọ Ấm': [
-    { text: 'Visual Studio Code', logo: 'mdi:visual-studio-code' },
+    { text: 'Phá Cảm Thọ Chấp', logo: 'mdi:visual-studio-code' },
     { text: 'Git', logo: 'mdi:git' },
   ],
   'Tưởng Ấm': [
-    { text: 'DigitalOcean', logo: 'mdi:digital-ocean' },
+    { text: 'Phá Vọng Tưởng Chấp', logo: 'mdi:digital-ocean' },
     { text: 'Cloudflare', logo: 'cib:cloudflare' },
     { text: 'Netlify', logo: 'cib:netliflanguage-css3'},
     ],
   'Hành Ấm': [
-    { text: 'Windows', logo: 'mdi:windows' },
+    { text: 'Phá Vọng Động Chấp', logo: 'mdi:windows' },
     { text: 'Ubuntu', logo: 'mdi:ubuntu' },
   ],
   'Thức Ấm': [
-    { text: 'Lua', logo: 'mdi:language-lua' },
+    { text: 'Phá Phân Biệt Chấp', logo: 'mdi:language-lua' },
     { text: 'Golang', logo: 'mdi:language-go' },
     { text: 'Node.js', logo: 'mdi:nodejs' },
   ],
