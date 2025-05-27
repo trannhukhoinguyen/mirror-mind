@@ -67,18 +67,18 @@ export interface Category {
 }
 
 export type Technologies = {
-  'Web Development': Category[]
-  'Development Tools': Category[]
-  'Hosting and Cloud Services': Category[]
-  'Operating Systems': Category[]
-  'Other Programming Languages and Technologies': Category[]
-  'Web Servers': Category[]
-  Databases: Category[]
-  'Other Software': Category[]
+  'Sắc Ấm': Category[]
+  'Thọ Ấm': Category[]
+  'Tưởng Ấm': Category[]
+  'Hành Ấm': Category[]
+  'Thức Ấm': Category[]
+  'Sơ quan': Category[]
+  'Trùng quan': Category[]
+  'Lao quan': Category[]
 }
 
 export const technologies: Technologies = {
-  'Web Development': [
+  'Sắc Ấm': [
     { text: 'HTML', logo: 'mdi:language-html5' },
     { text: 'JavaScript', logo: 'mdi:language-javascript' },
     { text: 'CSS', logo: 'mdi:language-css3' },
@@ -86,33 +86,33 @@ export const technologies: Technologies = {
     { text: 'Astro', logo: 'simple-icons:astro' },
     { text: 'Tailwind CSS', logo: 'mdi:tailwind' },
   ],
-  'Development Tools': [
+  'Thọ Ấm': [
     { text: 'Visual Studio Code', logo: 'mdi:visual-studio-code' },
     { text: 'Git', logo: 'mdi:git' },
   ],
-  'Hosting and Cloud Services': [
+  'Tưởng Ấm': [
     { text: 'DigitalOcean', logo: 'mdi:digital-ocean' },
     { text: 'Cloudflare', logo: 'cib:cloudflare' },
-    { text: 'Netlify', logo: 'cib:netlify' },
-  ],
-  'Operating Systems': [
+    { text: 'Netlify', logo: 'cib:netliflanguage-css3'},
+    ],
+  'Hành Ấm': [
     { text: 'Windows', logo: 'mdi:windows' },
     { text: 'Ubuntu', logo: 'mdi:ubuntu' },
   ],
-  'Other Programming Languages and Technologies': [
+  'Thức Ấm': [
     { text: 'Lua', logo: 'mdi:language-lua' },
     { text: 'Golang', logo: 'mdi:language-go' },
     { text: 'Node.js', logo: 'mdi:nodejs' },
   ],
-  'Web Servers': [
+  'Sơ Quan': [
     { text: 'Apache', logo: 'cib:apache' },
     { text: 'Nginx', logo: 'cib:nginx' },
   ],
-  Databases: [
+  'Trùng Quan': [
     { text: 'MySQL', logo: 'cib:mysql' },
     { text: 'MongoDB', logo: 'cib:mongodb' },
   ],
-  'Other Software': [
+  'Lao Quan': [
     { text: 'Discord', logo: 'mdi:discord' },
     { text: 'Spotify', logo: 'mdi:spotify' },
     { text: 'Visual Studio', logo: 'mdi:visual-studio' },
