@@ -68,9 +68,6 @@ export type Technologies = {
   'Tưởng Ấm': Category[]
   'Hành Ấm': Category[]
   'Thức Ấm': Category[]
-  'Sơ Quan': Category[]
-  'Trùng Quan': Category[]
-  'Lao Quan': Category[]
 }
 
 export const technologies: Technologies = {
@@ -97,19 +94,5 @@ export const technologies: Technologies = {
     { text: 'Phá Phân Biệt Chấp', logo: 'mdi:language-lua' },
     { text: 'Golang', logo: 'mdi:language-go' },
     { text: 'Node.js', logo: 'mdi:nodejs' },
-  ],
-  'Sơ Quan': [
-    { text: 'Apache', logo: 'cib:apache' },
-    { text: 'Nginx', logo: 'cib:nginx' },
-  ],
-  'Trùng Quan': [
-    { text: 'MySQL', logo: 'cib:mysql' },
-    { text: 'MongoDB', logo: 'cib:mongodb' },
-  ],
-  'Lao Quan': [
-    { text: 'Discord', logo: 'mdi:discord' },
-    { text: 'Spotify', logo: 'mdi:spotify' },
-    { text: 'Visual Studio', logo: 'mdi:visual-studio' },
-    { text: 'Brave', logo: 'cib:brave' },
   ],
 }
