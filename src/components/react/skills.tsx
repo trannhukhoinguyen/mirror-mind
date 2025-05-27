@@ -56,11 +56,11 @@ const iconMap: { [key: string]: IconType } = {
 }
 
 const categories = Object.keys(technologies)
-const groupSize = Math.ceil(categories.length / 3)
+const groupSize = Math.ceil(categories.length / 5)
 const categoryGroups = [
   categories.slice(0, groupSize),
-  categories.slice(groupSize, groupSize * 2),
-  categories.slice(groupSize * 2),
+  categories.slice(groupSize, groupSize * 4),
+  categories.slice(groupSize * 4),
 ]
 
 const Skills: React.FC = () => {
