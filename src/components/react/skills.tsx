@@ -56,13 +56,14 @@ const iconMap: { [key: string]: IconType } = {
 }
 
 const categories = Object.keys(technologies)
-const groupSize = Math.ceil(categories.length / 5)
+const groupSize = Math.ceil(categories.length / 6)
 const categoryGroups = [
   categories.slice(0, groupSize),
   categories.slice(groupSize, groupSize * 2),
   categories.slice(groupSize * 2, groupSize * 3),
   categories.slice(groupSize * 3, groupSize * 4),
-  categories.slice(groupSize * 4),
+  categories.slice(groupSize * 4, groupSize * 5),
+  categories.slice(groupSize * 5),
 ]
 
 const Skills: React.FC = () => {
@@ -86,7 +87,7 @@ const Skills: React.FC = () => {
             {group.flatMap((category) =>
               technologies[category as keyof Technologies].map(
                 (tech: Category, techIndex: number) => {
-                  const IconComponent = iconMap[tech.logo] || FaQuestionCircle
+                  const IconComponent = FaQuestionCircle
                   return (
                     <div
                       key={`${category}-${techIndex}`}
