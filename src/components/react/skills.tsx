@@ -59,10 +59,10 @@ const categories = Object.keys(technologies)
 const groupSize = Math.ceil(categories.length / 5)
 const categoryGroups = [
   categories.slice(0, groupSize),
-  categories.slice(groupSize+1, groupSize * 2),
-  categories.slice(groupSize * 2 + 1, groupSize * 3),
-  categories.slice(groupSize * 3 + 1, groupSize * 4),
-  categories.slice(groupSize * 4 + 1),
+  categories.slice(groupSize, groupSize * 2),
+  categories.slice(groupSize * 2, groupSize * 3),
+  categories.slice(groupSize * 3, groupSize * 4),
+  categories.slice(groupSize * 4),
 ]
 
 const Skills: React.FC = () => {
