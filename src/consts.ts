@@ -72,9 +72,9 @@ export type Technologies = {
   'Tưởng Ấm': Category[]
   'Hành Ấm': Category[]
   'Thức Ấm': Category[]
-  'Sơ quan': Category[]
-  'Trùng quan': Category[]
-  'Lao quan': Category[]
+  'Sơ Quan': Category[]
+  'Trùng Quan': Category[]
+  'Lao Quan': Category[]
 }
 
 export const technologies: Technologies = {
