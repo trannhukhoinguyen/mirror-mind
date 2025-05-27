@@ -1,0 +1,107 @@
+---
+import Click from '@/javascript/controls.astro';
+import Address from '@/javascript/address.astro';
+import FreeFeed from '@/javascript/freeFeed.astro';
+import FreezeFeed from '@/javascript/freezeFeed.astro';
+
+import {
+  Slideup
+} from '@/assets/framer.jsx';
+---
+
+<Slideup client:visible>
+
+  <section class="relative md:-mt-[76px] not-prose">
+
+    <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
+
+    <div class="relative max-w-7xl mx-auto">
+
+      <div class="pt-0 md:pt-[120px] pointer-events-none"></div>
+
+      <!-- Flex container for two terminals -->
+      <div class="flex flex-col md:flex-row gap-6">
+
+        <!-- Terminal 1: FreeFeed -->
+        <div class="terminal w-full md:w-1/2">
+          <div class="window-controls">
+            <div class="control close"></div>
+            <div class="control minimize"></div>
+            <div class="control maximize"></div>
+            <p id="user-ip-a">Đang lấy địa chỉ A</p>
+          </div>
+          <div class="command-content">
+            <pre class="typewriter" data-content="> Xin chào! Đây là Feed Terminal...\n> Đang tải dữ liệu..."></pre>
+            <FreeFeed />
+          </div>
+        </div>
+
+        <!-- Terminal 2: FreezeFeed -->
+        <div class="terminal w-full md:w-1/2">
+          <div class="window-controls">
+            <div class="control close"></div>
+            <div class="control minimize"></div>
+            <div class="control maximize"></div>
+            <p id="user-ip-b">Đang lấy địa chỉ B</p>
+          </div>
+          <div class="command-content">
+            <pre class="typewriter" data-content="> Xin chào! Đây là Feed Terminal...\n> Đang tải dữ liệu..."></pre>
+            <FreezeFeed />
+          </div>
+        </div>
+
+      </div>
+
+      <Click />
+      <Address />
+
+      <script type="module" client:load src="/src/javascript/typewriter-init.js"></script>
+
+    </div>
+
+  </section>
+
+</Slideup>
+
+<style>
+  .terminal {
+    height: calc(100vh - 50px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(3px);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .window-controls {
+    height: 50px;
+    padding: 8px 12px;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .control {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+
+  .close { background: #ff5f56; }
+  .minimize { background: #ffbd2e; }
+  .maximize { background: #27c93f; }
+
+  .command-content {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    color: white;
+    font-family: monospace;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+</style>

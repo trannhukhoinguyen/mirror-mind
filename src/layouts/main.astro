@@ -1,0 +1,50 @@
+---
+import { SITE } from '@/consts'
+
+import SEO from '@/components/flow/schema.astro';
+import Anti from '@/javascript/anticopy.astro';
+import Head from '@/components/Head.astro'
+
+import '@/assets/tailwind.css';
+import '@/styles/global.css'
+import '@/styles/typography.css'
+
+---
+
+<!DOCTYPE html>
+
+<html lang={SITE.locale}>
+
+	<Head>
+
+		<SEO/>
+
+	</Head>
+
+	<body class="antialiased text-default bg-page tracking-tight">
+
+		<slot/>
+
+		<!--
+		  <Anti/>
+		--> <!--Ngăn chặn các hành vi COPY-->
+
+		<noscript>
+
+			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WN6L7TJP"
+
+				height="0" width="0" style="display:none;visibility:hidden">
+
+			</iframe>
+
+		</noscript>
+
+		<style is:global>
+			img {
+				content-visibility: auto;
+			}
+		</style>
+
+	</body>
+
+</html>

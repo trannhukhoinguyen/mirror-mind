@@ -4,6 +4,7 @@ import mdx from '@astrojs/mdx'
 import react from '@astrojs/react'
 import sitemap from '@astrojs/sitemap'
 import icon from 'astro-icon'
+import path from "path";
 
 import expressiveCode from 'astro-expressive-code'
 import { rehypeHeadingIds } from '@astrojs/markdown-remark'
@@ -65,7 +66,7 @@ export default defineConfig({
         "@radix-ui/react-separator",
         "@radix-ui/react-slot"
       ]
-    },    
+    },
   },
 
   server: {
