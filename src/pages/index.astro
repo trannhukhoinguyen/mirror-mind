@@ -1,15 +1,7 @@
 ---
-import Link from '@/components/Link.astro'
-import PageHead from '@/components/PageHead.astro'
-import BlogCard from '@/components/react/blog-card'
 import Skills from '@/components/react/skills'
-import { buttonVariants } from '@/components/ui/button'
-import Logo from '@/components/ui/logo'
 import Layout from '@/layouts/Layout.astro'
-import { getRecentPosts } from '@/lib/data-utils'
-import { SITE } from '@/consts'
 
-const blog = await getRecentPosts(3);
 const currentUrl = Astro.url;
 const title = "Practise Patriarchal Zen";
 ---

@@ -2,7 +2,15 @@ import { cn } from "@/lib/utils"
 
 function Logo({ className }: { className?: string }) {
   return (
-    <svg
+  <picture>
+    <source srcSet="/logo-dark.png" media="(prefers-color-scheme: dark)" />
+    <img
+      src="/logo.png"
+      alt="Logo"
+      className={className}
+    />
+  </picture>
+/*    <svg
       viewBox="0 0 350 266"
       xmlns="http://www.w3.org/2000/svg"
       className={cn(
@@ -11,7 +19,7 @@ function Logo({ className }: { className?: string }) {
       )}
       role="img"
       aria-label="Logo"
-        aria-hidden="true"  
+        aria-hidden="true"
         name="logo"
         focusable="false"
     >
@@ -21,7 +29,7 @@ function Logo({ className }: { className?: string }) {
         fillRule="evenodd"
         clipRule="evenodd"
       />
-    </svg>
+    </svg>*/
   )
 }
 

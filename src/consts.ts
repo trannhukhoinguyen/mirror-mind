@@ -27,28 +27,30 @@ export const NAV_LINKS: SocialLink[] = [
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
-    href: 'https://github.com/cojocaru-david?ref=personal-website',
-    label: 'GitHub',
+    href: 'https://www.youtube.com/@PhapMonToSuThien',
+    label: 'Youtube',
   },
   {
-    href: 'mailto:contact@cojocarudavid.me',
-    label: 'Email',
+    href: 'https://www.youtube.com/@thientosu9432',
+    label: 'Youtube',
   },
   {
-    href: '+40 764 132 266',
-    label: 'Phone',
+    href: 'https://www.youtube.com/c/T%C3%B4ngPhongT%E1%BB%95S%C6%B0Thi%E1%BB%81n',
+    label: 'Youtube',
   },
   {
-    href: 'https://www.instagram.com/david._.cojo?ref=personal-website',
-    label: 'Instagram',
+    href: 'https://www.youtube.com/@H%C3%B9ngV%C5%A9V%C4%83nOfficial',
+    label: 'Youtube',
   },
   {
-    href: '/rss.xml',
-    label: 'RSS',
+    href: 'https://www.facebook.com/Nhohoivanhin',
+    label: 'Facebook',
   },
 ]
 
 export const ICON_MAP: IconMap = {
+  Youtube: 'lucide:youtube',
+  Facebook: 'lucide:facebook',
   Website: 'lucide:globe',
   GitHub: 'lucide:github',
   Instagram: 'lucide:instagram',
@@ -83,16 +85,11 @@ export const technologies: Technologies = {
   ],
   'Tưởng Ấm': [
     { text: 'Phá Vọng Tưởng Chấp', logo: 'mdi:digital-ocean' },
-    { text: 'Cloudflare', logo: 'cib:cloudflare' },
-    { text: 'Netlify', logo: 'cib:netliflanguage-css3'},
     ],
   'Hành Ấm': [
     { text: 'Phá Vọng Động Chấp', logo: 'mdi:windows' },
-    { text: 'Ubuntu', logo: 'mdi:ubuntu' },
   ],
   'Thức Ấm': [
     { text: 'Phá Phân Biệt Chấp', logo: 'mdi:language-lua' },
-    { text: 'Golang', logo: 'mdi:language-go' },
-    { text: 'Node.js', logo: 'mdi:nodejs' },
   ],
 }
