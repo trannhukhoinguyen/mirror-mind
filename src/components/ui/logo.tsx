@@ -3,9 +3,9 @@ import { cn } from "@/lib/utils"
 function Logo({ className }: { className?: string }) {
   return (
   <picture>
-    <source srcSet="/logo-dark.png" media="(prefers-color-scheme: dark)" />
+    <source srcSet="../../../public/logo-dark.png" media="(prefers-color-scheme: dark)" />
     <img
-      src="/logo.png"
+      src="../../../public/logo.png"
       alt="Logo"
       className={className}
     />
