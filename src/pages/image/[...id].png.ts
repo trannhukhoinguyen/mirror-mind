@@ -176,8 +176,8 @@ export async function GET(context: APIContext) {
       'Content-Disposition': 'inline; filename="social-card.png"',
       'Cache-Control': 'public, max-age=31536000, immutable',
       'Content-Length': pngData.length.toString(),
-      'Surrogate-Key': tags.join(' '),
-      'Query-String-Hash': title.toLowerCase().replace(/\s+/g, '-'),
+/*      'Surrogate-Key': tags.map(tag => encodeURIComponent(tag)).join(','),
+      'Query-String-Hash': encodeURIComponent(title.toLowerCase().replace(/\s+/g, '-')),*/
       'Cache-Tag': 'social-image',
       'X-Content-Type-Options': 'nosniff',
       'Last-Modified': new Date().toUTCString(),
