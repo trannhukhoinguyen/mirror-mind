@@ -1,11 +1,11 @@
 import { useEffect } from 'react'
-import { technologies, type Technologies, type Category } from '../../consts'
+import { minds, type Minds, type Category } from '../../consts'
 import { InfiniteScroll } from '../ui/infinite-scroll'
 import { type IconType } from 'react-icons'
 import { FaQuestionCircle } from 'react-icons/fa'
 import { FileCode, LucideAppWindow, Code } from 'lucide-react'
 
-const categories = Object.keys(technologies)
+const categories = Object.keys(minds)
 const groupSize = Math.ceil(categories.length / 5)
 const categoryGroups = [
   categories.slice(0, groupSize),
@@ -34,20 +34,20 @@ const Minds: React.FC = () => {
             className="flex flex-row justify-center"
           >
             {group.flatMap((category) =>
-              technologies[category as keyof Technologies].map(
-                (tech: Category, techIndex: number) => {
+              minds[category as keyof Minds].map(
+                (mind: Category, mindIndex: number) => {
                   const IconComponent = FaQuestionCircle
                   return (
                     <div
-                      key={`${category}-${techIndex}`}
+                      key={`${category}-${mindIndex}`}
                       className="tech-badge repo-card border-border bg-card text-muted-foreground mr-5 flex items-center gap-3 rounded-full border p-3 shadow-sm backdrop-blur-sm transition-all duration-300 hover:shadow-md"
-                      data-tech-name={`${category}-${techIndex}`}
+                      data-tech-name={`${category}-${mindIndex}`}
                     >
                       <span className="bg-muted flex h-10 w-10 items-center justify-center rounded-full p-2 text-lg shadow-inner">
                         <IconComponent className="tech-icon text-primary" />
                       </span>
                       <span className="text-foreground font-medium">
-                        {tech.text}
+                        {mind.text}
                       </span>
                     </div>
                   )

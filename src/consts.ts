@@ -2,12 +2,11 @@ import type { IconMap, SocialLink, Site } from '@/types'
 
 export const SITE: Site = {
   title: 'Tổ Sư Thiền',
-  description:
-    "",
-  href: 'https://cojocarudavid.me',
+  description: "",
+  href: 'https://tosuthien.top',
   author: 'Patriarchal Zen',
   locale: 'en-US',
-  location: 'India',
+  location: 'Vietnam',
 }
 
 export const NAV_LINKS: SocialLink[] = [
@@ -64,7 +63,7 @@ export interface Category {
   logo: string
 }
 
-export type Technologies = {
+export type Minds = {
   'Sắc Ấm': Category[]
   'Thọ Ấm': Category[]
   'Tưởng Ấm': Category[]
@@ -72,7 +71,7 @@ export type Technologies = {
   'Thức Ấm': Category[]
 }
 
-export const technologies: Technologies = {
+export const minds: Minds = {
   'Sắc Ấm': [
     { text: 'Phá Ngã Chấp', logo: 'mdi:language-html5' },
     { text: 'Phá Nhân Chấp', logo: 'mdi:language-javascript' },
