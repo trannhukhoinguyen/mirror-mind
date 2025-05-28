@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { minds, type Minds, type Category } from '../../consts'
+import { minds, type MindTypes, type Category } from '../../consts'
 import { InfiniteScroll } from '../ui/infinite-scroll'
 import { type IconType } from 'react-icons'
 import { FaQuestionCircle } from 'react-icons/fa'
@@ -34,7 +34,7 @@ const Minds: React.FC = () => {
             className="flex flex-row justify-center"
           >
             {group.flatMap((category) =>
-              minds[category as keyof Minds].map(
+              minds[category as keyof MindTypes].map(
                 (mind: Category, mindIndex: number) => {
                   const IconComponent = FaQuestionCircle
                   return (

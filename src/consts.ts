@@ -63,7 +63,7 @@ export interface Category {
   logo: string
 }
 
-export type Minds = {
+export type MindTypes = {
   'Sắc Ấm': Category[]
   'Thọ Ấm': Category[]
   'Tưởng Ấm': Category[]
@@ -71,7 +71,7 @@ export type Minds = {
   'Thức Ấm': Category[]
 }
 
-export const minds: Minds = {
+export const minds: MindTypes = {
   'Sắc Ấm': [
     { text: 'Phá Ngã Chấp', logo: 'mdi:language-html5' },
     { text: 'Phá Nhân Chấp', logo: 'mdi:language-javascript' },
