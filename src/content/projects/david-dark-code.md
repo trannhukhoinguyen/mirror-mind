@@ -3,7 +3,7 @@ name: 'David Dark Code'
 description: 'David Dark is a dark theme for VS Code. It is based on the github theme and the default dark theme. It is designed to be easy on the eyes and to be used for long periods of time.'
 tags: ['vscode', 'theme', 'dark']
 image: '../../../public/static/david-dark-code.png'
-link: 'https://github.com/cojocaru-david/david-dark-code'
+link: 'https://tosuthien.vercel.app'
 startDate: '2023-10-17'
 endDate: '2023-10-17'
 ---

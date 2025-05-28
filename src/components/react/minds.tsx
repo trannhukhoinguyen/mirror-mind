@@ -6,13 +6,15 @@ import { FaQuestionCircle } from 'react-icons/fa'
 import { FileCode, LucideAppWindow, Code } from 'lucide-react'
 
 const categories = Object.keys(minds)
-const groupSize = Math.ceil(categories.length / 5)
+const groupSize = Math.ceil(categories.length / 7)
 const categoryGroups = [
   categories.slice(0, groupSize),
   categories.slice(groupSize, groupSize * 2),
   categories.slice(groupSize * 2, groupSize * 3),
   categories.slice(groupSize * 3, groupSize * 4),
-  categories.slice(groupSize * 4),
+  categories.slice(groupSize * 4, groupSize * 5),
+  categories.slice(groupSize * 5, groupSize * 6),
+  categories.slice(groupSize * 6),
 ]
 
 const Minds: React.FC = () => {

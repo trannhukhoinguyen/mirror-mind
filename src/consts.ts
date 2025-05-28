@@ -60,35 +60,39 @@ export const ICON_MAP: IconMap = {
 
 export interface Category {
   text: string
-  logo: string
+  logo?: string
 }
 
 export type MindTypes = {
-  'Sắc Ấm': Category[]
-  'Thọ Ấm': Category[]
-  'Tưởng Ấm': Category[]
-  'Hành Ấm': Category[]
-  'Thức Ấm': Category[]
+  'Hưu Khứ': Category[]
+  'Hiết Khứ': Category[]
+  'Lãnh Khứ': Category[]
+  'Nhất Niệm Vạn Niên': Category[]
+  'Hàn Khôi Khô Mộc': Category[]
+  'Cổ Miếu Hương Lư': Category[]
+  'Lụa Trắng': Category[]
 }
 
 export const minds: MindTypes = {
-  'Sắc Ấm': [
-    { text: 'Phá Ngã Chấp', logo: 'mdi:language-html5' },
-    { text: 'Phá Nhân Chấp', logo: 'mdi:language-javascript' },
-    { text: 'Phá Chúng Sanh Chấp', logo: 'mdi:language-css3' },
-    { text: 'Phá Thọ Giả Chấp', logo: 'mdi:language-php' },
+  'Hưu Khứ': [
+    { text: 'Đơn giản hóa cuộc sống, bớt nói, bớt giao tiếp, bỏ mạng xã hội' },
   ],
-  'Thọ Ấm': [
-    { text: 'Phá Cảm Thọ Chấp', logo: 'mdi:visual-studio-code' },
-    { text: 'Git', logo: 'mdi:git' },
+  'Hiết Khứ': [
+    { text: 'Không đọc thêm kinh luận trong lúc tham thoại đầu, không lý giải' },
   ],
-  'Tưởng Ấm': [
-    { text: 'Phá Vọng Tưởng Chấp', logo: 'mdi:digital-ocean' },
+  'Lãnh Khứ': [
+    { text: 'Nhận ra khi nghi tình ổn định, tâm như dòng nước lạnh, không bị cuốn' },
     ],
-  'Hành Ấm': [
-    { text: 'Phá Vọng Động Chấp', logo: 'mdi:windows' },
+  'Nhất Niệm Vạn Niên': [
+    { text: 'Giữ nghi tình như hơi thở nhẹ nhàng, không đoạn' },
   ],
-  'Thức Ấm': [
-    { text: 'Phá Phân Biệt Chấp', logo: 'mdi:language-lua' },
+  'Hàn Khôi Khô Mộc': [
+    { text: 'Không còn tâm phản ứng, quan sát thấy vọng nhưng không bị lôi' },
+  ],
+  'Cổ Miếu Hương Lư': [
+    { text: 'Không cầu chứng, không mong thấy gì, buông cả “ngộ”' },
+  ],
+  'Lụa Trắng': [
+    { text: 'Nếu tâm thuần tịnh, không biết mình đang tu, ấy là gần cửa' },
   ],
 }
