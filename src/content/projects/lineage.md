@@ -47,16 +47,15 @@ portfolio/
 └── package.json            # Project dependencies
 ```
 
-# 🎨 **Five Schools**
+# 🎨 **Five Schools** 📙📘📗📕📓📔📒
 
-📙📘📗📕📓📔📒🌟
 ⚡️ Lâm Tế thế thắng
 🎁 Qui Ngưỡng trao nhau
-🍀 Tào Động đinh ninh
+🌟 Tào Động đinh ninh
 🎈 Pháp Nhãn linh xảo
-🌸 Vân Môn thẳng tắt
+🌊 Vân Môn thẳng tắt
 
-## ⚡️ **Linji**
+## ⚡️ **LÂM TẾ TÔNG**
 
 ✨ Tam Huyền
 
@@ -164,7 +163,7 @@ portfolio/
 └── package.json            # Project dependencies
 ```
 
-## 🎁 **Weiyang**
+## 🎁 **QUY NGƯỠNG TÔNG**
 
 Quy Ngưỡng Tông cho 96 tướng tròn, gia phong tương đối ôn hòa, chẳng giống sự mãnh liệt của Lâm Tế Tông.
 
@@ -190,7 +189,7 @@ portfolio/
 └── package.json            # Project dependencies
 ```
 
-## 🍀 **Caodong**
+## 🌟 **TÀO ĐỘNG TÔNG**
 
 “Tào Động là xướng họa làm dụng”, bởi gia phong một vấn một đáp, qua lại miên mật, so với cơ phong thẳng tắp của Lâm Tế ý thú khác xa. Nên người xưa có lời nói “Lâm Tế tướng quân, Tào Động nông dân”. Vì gia phong Lâm Tế như tướng chỉ huy binh lính trăm vạn, mà gia phong Tào Động thì như kẻ nông phu canh tác ruộng đất rất chu đáo vậy.
 
@@ -300,7 +299,7 @@ portfolio/
 └── package.json            # Project dependencies
 ```
 
-## 🎈 **Fayan**
+## 🎈 **PHÁP NHÃN TÔNG**
 
 Gia phong của Pháp Nhãn Tông có Lục Tướng và Tứ Liệu Giản dùng để tiếp dẫn hậu học.
 Tứ Liệu Giản tức là:
@@ -331,7 +330,7 @@ portfolio/
 └── package.json            # Project dependencies
 ```
 
-## 🌊 **Yunmen**
+## 🌊 **VÂN MÔN TÔNG**
 
 Gia Phong của Vân Môn thẳng tắt, thường dùng 3 chữ **Cố** (nhìn), **Giám** (xem), **Ỷ** (chê) để khám xét người học;
 còn có Vân Môn Bát Yểu:
