@@ -2,14 +2,14 @@ import { cn } from "@/lib/utils"
 
 function Logo({ className }: { className?: string }) {
   return (
-  <picture>
-    <source srcSet="../../../public/logo-dark.png" media="(prefers-color-scheme: dark)" />
     <img
-      src="../../../public/logo.png"
+      src="@/public/logo.png"
       alt="Logo"
-      className={className}
+      className={cn(
+        "w-full h-auto text-neutral-900 dark:text-neutral-100 transition-colors duration-300",
+        className
+      )}
     />
-  </picture>
 /*    <svg
       viewBox="0 0 350 266"
       xmlns="http://www.w3.org/2000/svg"
