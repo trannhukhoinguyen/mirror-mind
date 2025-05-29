@@ -10,21 +10,18 @@ startDate: '2025-05-28'
 # **India**
 
 ```
-portfolio/
-├── public/                 # Static assets
-├── src/
-│   ├── components/         # UI components
-│   ├── content/            # Content collections
-│   │   ├── blog/           # Blog posts in MD/MDX format
-│   │   └── projects/       # Project data
-│   ├── layouts/            # Page layouts
-│   ├── lib/                # Utility functions
-│   ├── pages/              # Page routes
-│   └── styles/             # Global styles
-├── astro.config.mjs        # Astro configuration
-├── tailwind.config.cjs     # Tailwind CSS configuration
-├── tsconfig.json           # TypeScript configuration
-└── package.json            # Project dependencies
+Śākyamuni Buddha/
+└── Mahākāśyapa/
+   └── Ānanda/           
+        └── Śānavāsa/           
+            └── Upagupta/   
+                └── Dhrtaka/
+                   └── Miccaka/           
+                        └── Vasumitra/           
+                            └── Buddhanandi/                         
+                                └── Buddhamitra/           
+                                    └── Pārśva/           
+                                        └── Punyayaśas/      
 ```
 
 # **China**
