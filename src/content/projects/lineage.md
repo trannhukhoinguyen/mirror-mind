@@ -1,6 +1,6 @@
 ---
-name: 'Patriarchal Zen Lineage'
-description: 'Patriarchal Zen Lineage'
+name: 'TRUYỀN THỪA THIỀN TÔNG'
+description: 'Từ Phật Thích Ca truyền đến nay...'
 tags: ['lineage']
 image: 'https://www.tsemrinpoche.com/wp-content/uploads/2017/02/sixpatriarchs009.jpg'
 link: 'https://tosuthien.vercel.app'
