@@ -49,7 +49,9 @@ Bodhidharma (XXVII)
         └── Śānavāsa           
             └── Upagupta   
                 └── Dhrtaka
-                   └── Miccaka     ```
+                   └── Miccaka
+```
+
 
 # 🎨 **Five Schools**
 
