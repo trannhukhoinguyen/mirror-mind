@@ -57,7 +57,7 @@ portfolio/
 
 ## ⚡️ **LÂM TẾ TÔNG**
 
-### Truyền thừa
+### 🌱 Truyền thừa
 
 ```
 portfolio/
@@ -77,7 +77,7 @@ portfolio/
 └── package.json            # Project dependencies
 ```
 
-### Gia phong - Tông chỉ
+### 📜 Gia phong - Tông chỉ
 
 ✨ TAM HUYỀN
 
@@ -198,7 +198,7 @@ Sư đáp:
 
 ## 🎁 **QUY NGƯỠNG TÔNG**
 
-### Truyền thừa
+### 🌱 Truyền thừa
 
 ```
 portfolio/
@@ -218,7 +218,7 @@ portfolio/
 └── package.json            # Project dependencies
 ```
 
-### Gia phong - Tông chỉ
+### 📜 Gia phong - Tông chỉ
 
 Quy Ngưỡng Tông cho 96 tướng tròn, gia phong tương đối ôn hòa, chẳng giống sự mãnh liệt của Lâm Tế Tông.
 
@@ -230,7 +230,7 @@ Còn Pháp Nhãn Thiền Sư Thập Quy Luận rằng: “Quy Ngưỡng thì vu�
 
 ## 🌟 **TÀO ĐỘNG TÔNG**
 
-### Truyền thừa
+### 🌱 Truyền thừa
 
 ```
 portfolio/
@@ -250,7 +250,7 @@ portfolio/
 └── package.json            # Project dependencies
 ```
 
-### Gia phong - Tông chỉ
+### 📜 Gia phong - Tông chỉ
 
 “Tào Động là xướng họa làm dụng”, bởi gia phong một vấn một đáp, qua lại miên mật, so với cơ phong thẳng tắp của Lâm Tế ý thú khác xa. Nên người xưa có lời nói “Lâm Tế tướng quân, Tào Động nông dân”. Vì gia phong Lâm Tế như tướng chỉ huy binh lính trăm vạn, mà gia phong Tào Động thì như kẻ nông phu canh tác ruộng đất rất chu đáo vậy.
 
@@ -368,7 +368,7 @@ portfolio/
 
 ## 🎈 **PHÁP NHÃN TÔNG**
 
-### Truyền thừa
+### 🌱 Truyền thừa
 
 ```
 portfolio/
@@ -388,7 +388,7 @@ portfolio/
 └── package.json            # Project dependencies
 ```
 
-### Gia phong - Tông chỉ
+### 📜 Gia phong - Tông chỉ
 
 Gia phong của Pháp Nhãn Tông có **Lục Tướng** và **Tứ Liệu Giản** dùng để tiếp dẫn hậu học:
 
@@ -426,7 +426,7 @@ portfolio/
 
 ## 🌊 **VÂN MÔN TÔNG**
 
-### Truyền thừa
+### 🌱 Truyền thừa
 
 ```
 portfolio/
@@ -446,7 +446,7 @@ portfolio/
 └── package.json            # Project dependencies
 ```
 
-### Gia phong - Tông chỉ
+### 📜 Gia phong - Tông chỉ
 
 Gia Phong của Vân Môn thẳng tắt, thường dùng:
 
