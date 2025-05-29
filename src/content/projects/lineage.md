@@ -435,21 +435,21 @@ Văn Yểm có tự làm bài kệ rằng:
 
 🌟 Đệ tử Ngài Vân Môn là Viên Minh Thiền sư có bài tụng ba câu của Vân Môn rằng:
 
-1️⃣ Hàm cái càn khôn:
+1️⃣ Hàm Cái Càn Khôn:
 
 > Càn khôn và vạn tượng,
 > Địa ngục với thiên đường,
 > Vật vật đều trực hiện,
 > Mỗi mỗi chẳng đúng sai.
 
-2️⃣ Triệt đoạn chúng lưu:
+2️⃣ Triệt Đoạn Chúng Lưu:
 
 > Đầy núi đầy biển lại,
 > Mỗi mỗi đều trần ai,
 > Lại muốn lập huyền diệu,
 > Ngói bể băng tiêu ngay.
 
-3️⃣ Tùy ba trục lãng:
+3️⃣ Tùy Ba Trục Lãng:
 
 > Cách hỏi đủ biện tài,
 > Cao thấp đáp chẳng sai,
