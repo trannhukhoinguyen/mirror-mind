@@ -55,11 +55,15 @@ Bodhidharma (XXVII)
 
 # 🎨 **Five Schools**
 
-⚡️ Lâm Tế thế thắng
-🎁 Qui Ngưỡng trao nhau
-🌟 Tào Động đinh ninh
-🎈 Pháp Nhãn linh xảo
-🌊 Vân Môn thẳng tắt
+### ⚡️ Lâm Tế thế thắng
+
+### 🎁 Qui Ngưỡng trao nhau
+
+### 🌟 Tào Động đinh ninh
+
+### 🎈 Pháp Nhãn linh xảo
+
+### 🌊 Vân Môn thẳng tắt
 
 ## ⚡️ **LÂM TẾ TÔNG**
 
