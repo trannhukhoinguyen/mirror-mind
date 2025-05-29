@@ -81,18 +81,22 @@ portfolio/
 
 ✨ TAM HUYỀN
 
-Tăng hỏi: *Thế nào là câu thứ 1️⃣* ?
+Tăng hỏi: *Thế nào là câu thứ 1️⃣*?
+
 1️⃣  Sư nói: “**Ấn khai tam yếu điểm son hẹp, chưa cho suy nghĩ chủ khách phân**”.
 
 Hỏi: *Thế nào là câu thứ 2️⃣*?
+
 2️⃣ Sư nói: “**Diệu giải chẳng cho vấn vô trước (chấp trước), phương tiện đâu phụ (cô phụ) triệt lưu cơ**”.
 
 Hỏi: *Thế nào là câu thứ 3️⃣*?
+
 3️⃣ Sư nói: “**Hãy xem trên đài hát múa rối, kéo dây đều do người bên trong**”.
 
 Lại nói: “**Một cú ngữ phải đủ tam huyền môn, một huyền môn phải đủ tam yếu, có quyền có thực, các ngươi làm sao lãnh hội!**”.
 
 Thủ Sơn Tỉnh Niệm Thiền sư (đời thứ 5 phái Lâm Tế) trong Cổ Tôn Túc Ngữ Lục rằng: 
+
 “**Ngộ được câu thứ nhất làm thầy của Tổ và Phật, ngộ được câu thứ nhì làm thầy của người và trời, ngộ được câu thứ ba tự cứu chẳng xong!**”.
 
 Còn Từ Minh Sở Viên Thiền Sư (đời thứ 7 phái Lâm Tế) vì Tăng hỏi Tam huyền Tam yếu mà thuyết tụng rằng:
@@ -100,19 +104,25 @@ Còn Từ Minh Sở Viên Thiền Sư (đời thứ 7 phái Lâm Tế) vì Tăng
 1️⃣ Đệ nhất huyền
 
 > Tam thế chư Phật tính nói chi?
+> 
 > Dạy bảo trong mộng sinh khinh rẻ,
+> 
 > Ngồi không lại thành đọa đoạn kiến.
 
 2️⃣ Đệ nhị huyền
 
 > Lanh lợi nạp Tăng mắt chưa sáng,
+> 
 > Lửa đá điện chớp là chậm trễ,
+> 
 > Nhướng mày nháy mắt càng cách xa.
 
 3️⃣ Đệ tam huyền
 
 > Vạn tượng sum la vũ trụ rộng.
+> 
 > Mây tan hang trống núi non lặng,
+> 
 > Nước chảy đất bằng đầy sông ngòi.
 
 ✨ TAM YẾU
@@ -120,27 +130,36 @@ Còn Từ Minh Sở Viên Thiền Sư (đời thứ 7 phái Lâm Tế) vì Tăng
 1️⃣ Đệ nhất yếu
 
 > Thánh phàm nói chi diệu,
+> 
 > Suy nghĩ đường càng xa,
+> 
 > Mở mắt điên đảo nhiều.
 
 2️⃣ Đệ nhị yếu
 
 > Đánh kiểng gọi đỉnh núi,
+> 
 > Thần thông đến tự tại.
+> 
 > Đa văn kêu ngoài cửa.
 
 3️⃣ Đệ tam yếu
 
 > Ngồi nằm khiến người chê.
+> 
 > Bàn tay nắm thiên địa.
+> 
 > Chiếu soi đủ ngàn sai.
 
 🍀 TỨ LIỆU GIẢN:
 https://thuvienhoasen.org/a41572/tu-lieu-gian-cua-to-lam-te-nguyen-the-dang
 
 > Có khi Đoạt Nhân chẳng Đoạt Cảnh,
+> 
 > Có khi Đoạt Cảnh chẳng Đoạt Nhân,
+> 
 > Có khi Nhân Cảnh đều Đoạt,
+> 
 > Có khi Nhân Cảnh đều chẳng Đoạt.
 
 1️⃣ Tăng hỏi thế nào là **Đoạt Nhân chẳng Đoạt Cảnh**?
@@ -148,6 +167,7 @@ https://thuvienhoasen.org/a41572/tu-lieu-gian-cua-to-lam-te-nguyen-the-dang
 Sư đáp:
 
 > Mặt trời phát sinh lụa trải khắp
+> 
 > Hài nhiều tóc dài trắng như tơ
 
 2️⃣ Hỏi thế nào là **Đoạt Cảnh chẳng Đoạt Nhân**?
@@ -155,6 +175,7 @@ Sư đáp:
 Sư đáp:
 
 > Lệnh vua đã ban khắp thiên hạ
+> 
 > Tướng quân biên thùy chẳng thấy nghe
 
 3️⃣ Hỏi thế nào là **Nhân Cảnh đều Đoạt**?
@@ -162,6 +183,7 @@ Sư đáp:
 Sư đáp:
 
 > Biên giới cách tuyệt tin tức
+> 
 > Tự cô độc ở một nơi
 
 4️⃣ Hỏi thế nào là **Nhân Cảnh đều chẳng Đoạt**?
@@ -169,6 +191,7 @@ Sư đáp:
 Sư đáp:
 
 > Vua lên ngôi bửu điện
+> 
 > Lão ẩn dật ca ngợi
 
 ***
@@ -262,31 +285,41 @@ portfolio/
 #### Chánh trung Lai
 
 > Bửu kiếm Kim Cang vạch trời ra,
+> 
 > Một tia thần quang khắp thế giới.
+> 
 > Phẩm tính sáng tỏ tuyệt trần ai.
 
 #### Chánh trung Thiên
 
 > Cơ phong sấm sét nháy mắt nhìn,
+> 
 > Lửa đá điện chớp chậm trễ thay!
+> 
 > Suy nghĩ đo lường xa ngàn dặm.
 
 #### Thiên trung Chánh
 
 > Hãy xem Luân Vương ban chánh lệnh,
+> 
 > Bảy ngàn Thái Tử đều theo hầu,
+> 
 > Giữa đường một mình tìm gương vàng.
 
 #### Thiên trung Chí
 
 > Sư tử tuổi oai thế sẵn,
+> 
 > Thiên tà bá quái ló đầu ra,
+> 
 > Rống lên một tiếng đều hàng phục.
 
 #### Kiêm trung Đáo
 
 > Hiển bày vô công chớ tạo tác,
+> 
 > Trâu gỗ bước đi trong lửa hồng,
+> 
 > Thật là Pháp Vương diệu trung diệu.
 
 ⭐️ Còn Ngũ Vị của Từ Minh Sở Viên Thiền Sư rằng:
@@ -294,31 +327,41 @@ portfolio/
 #### Chánh trung Lai
 
 > Gà đen nửa đêm gáy trong phòng,
+> 
 > Đáy biến đốt đèn thế giới sáng.
+> 
 > Tảng đá trồng bông mọc cây linh.
 
 #### Chánh trung Thiên
 
 > Mặt trời lặn xuống hiện bóng lạ,
+> 
 > Ảnh tượng rõ ràng hiển Tông thừa,
+> 
 > Lông mày chớ nhìn trăng trong giếng.
 
 #### Thiên trung Chánh
 
 > Ngựa gỗ sinh con khắp thiên hạ,
+> 
 > Mặc tình dẫn dắt đi đường chim,
+> 
 > Há chẳng người nương ổ chim ở.
 
 #### Thiên trung Chí
 
 > Mỗi mỗi trượng phu có ý khí,
+> 
 > Mâu thuẫn chống nhau chẳng vết thương,
+> 
 > Tung hoành khai triển chẳng lìa nhau.
 
 #### Kiêm trung Đáo
 
 > Trắng đen chưa rõ chớ tạo tác,
+> 
 > Phải biết trụ cột chưa sinh con.
+> 
 > Chớ nhận lời cuồng ngưng nửa đường.
 
 ***
@@ -429,8 +472,11 @@ Gia Phong của Vân Môn thẳng tắt, thường dùng:
 Văn Yểm có tự làm bài kệ rằng:
 
 > Vân Môn chót vót trên đám mây,
+> 
 > Cá chẳng dám trụ nước chảy bay,
+> 
 > Vào cửa đã biết ôm kiến giải
+> 
 > Đâu phiền kể lại sình bánh xe.
 
 🌟 Đệ tử Ngài Vân Môn là Viên Minh Thiền sư có bài tụng ba câu của Vân Môn rằng:
@@ -438,36 +484,51 @@ Văn Yểm có tự làm bài kệ rằng:
 1️⃣ Hàm Cái Càn Khôn:
 
 > Càn khôn và vạn tượng,
+> 
 > Địa ngục với thiên đường,
+> 
 > Vật vật đều trực hiện,
+> 
 > Mỗi mỗi chẳng đúng sai.
 
 2️⃣ Triệt Đoạn Chúng Lưu:
 
 > Đầy núi đầy biển lại,
+> 
 > Mỗi mỗi đều trần ai,
+> 
 > Lại muốn lập huyền diệu,
+> 
 > Ngói bể băng tiêu ngay.
 
 3️⃣ Tùy Ba Trục Lãng:
 
 > Cách hỏi đủ biện tài,
+> 
 > Cao thấp đáp chẳng sai,
+> 
 > Cũng như thuốc đúng bệnh.
+> 
 > Chẩn hỏi lúc lâm thời.
 
 🌟 Riêng hỏi ngoài 3 câu:
 
 > Đương nhơn nếu đề xướng,
+> 
 > Ba câu đâu thể gồm,
+> 
 > Có hỏi việc thế nào,
+> 
 > Nam Nhạc và Thiên Thai.
 
 🌟 Ngài Trí Môn làm bài tụng “Rút chữ Cố” rằng:
 
 > Vân Môn rút cố cười hi hi,
+> 
 > Suy nghĩ bị nó cố giám ỷ,
+> 
 > Dầu cho Trương Lương nhiều kế sách,
+> 
 > Cuối cùng ở đây cũng khó thi (hành).
 
 
