@@ -55,7 +55,7 @@ Bodhidharma (XXVII)
 
 # 🎨 **NGŨ TÔNG**
 
--⚡️ Lâm Tế thế thắng
+- ⚡️ Lâm Tế thế thắng
 
 - 🎁 Qui Ngưỡng trao nhau
 
