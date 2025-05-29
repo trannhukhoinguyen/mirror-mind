@@ -10,39 +10,46 @@ startDate: '2025-05-28'
 # **India**
 
 ```
-Śākyamuni Buddha/
-└── Mahākāśyapa/
-   └── Ānanda/           
-        └── Śānavāsa/           
-            └── Upagupta/   
-                └── Dhrtaka/
-                   └── Miccaka/           
-                        └── Vasumitra/           
-                            └── Buddhanandi/                         
-                                └── Buddhamitra/           
-                                    └── Pārśva/           
-                                        └── Punyayaśas/      
+Śākyamuni Buddha
+└── Mahākāśyapa (I)
+    └── Ānanda (II)
+        └── Śānavāsa (III)
+            └── Upagupta (IV)
+                └── Dhrtaka (V)
+                   └── Miccaka (VI)
+                        └── Vasumitra (VII)
+                            └── Buddhanandi (VIII)
+                                └── Buddhamitra (IX)
+                                    └── Pārśva (X)   
+                                        └── Punyayaśas (XI)
+                                            └── Mahākāśyapa (XII)
+                                                └── Ānanda (XIII)
+                                                    └── Śānavāsa (XIV)
+                                                        └── Upagupta (XV)
+                                                            └── Dhrtaka (XVI)
+                                                               └── Miccaka (XVII)
+                                                                    └── Vasumitra (XVIII)
+                                                                        └── Buddhanandi (XIX)          
+                                                                            └── Buddhamitra  (XX)
+                                                                                └── Pārśva (XXI)
+                                                                                    └── Punyayaśas (XXII)
+                                                                                       └── Buddhanandi (XXIII)          
+                                                                                            └── Buddhamitra (XXIV)
+                                                                                                └── Pārśva (XXV)
+                                                                                                    └── Punyayaśas (XXVI)                                                                                                    
+                                                                                                        └── Bodhidharma (XXVII)
 ```
 
 # **China**
 
 ```
-portfolio/
-├── public/                 # Static assets
-├── src/
-│   ├── components/         # UI components
-│   ├── content/            # Content collections
-│   │   ├── blog/           # Blog posts in MD/MDX format
-│   │   └── projects/       # Project data
-│   ├── layouts/            # Page layouts
-│   ├── lib/                # Utility functions
-│   ├── pages/              # Page routes
-│   └── styles/             # Global styles
-├── astro.config.mjs        # Astro configuration
-├── tailwind.config.cjs     # Tailwind CSS configuration
-├── tsconfig.json           # TypeScript configuration
-└── package.json            # Project dependencies
-```
+Bodhidharma (XXVII)
+└── Mahākāśyapa
+    └── Ānanda          
+        └── Śānavāsa           
+            └── Upagupta   
+                └── Dhrtaka
+                   └── Miccaka           
 
 # 🎨 **Five Schools**
 
