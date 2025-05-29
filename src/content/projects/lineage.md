@@ -390,8 +390,11 @@ portfolio/
 
 ### Gia phong - Tông chỉ
 
-Gia phong của Pháp Nhãn Tông có Lục Tướng và Tứ Liệu Giản dùng để tiếp dẫn hậu học.
-Tứ Liệu Giản tức là:
+Gia phong của Pháp Nhãn Tông có **Lục Tướng** và **Tứ Liệu Giản** dùng để tiếp dẫn hậu học:
+
+- **Lục Tướng**
+
+- **Tứ Liệu Giản** tức là:
 
 1️⃣ Văn văn (phóng)
 
@@ -449,7 +452,7 @@ Gia Phong của Vân Môn thẳng tắt, thường dùng:
 
 - 3 chữ: **Cố** (nhìn), **Giám** (xem), **Ỷ** (chê) để khám xét người học;
 
-- Vân Môn Bát Yểu:
+- Vân Môn **Bát Yểu**:
 
 1️⃣ Huyền
 
