@@ -291,35 +291,57 @@ portfolio/
 “Tào Động là xướng họa làm dụng”, bởi gia phong một vấn một đáp, qua lại miên mật, so với cơ phong thẳng tắp của Lâm Tế ý thú khác xa. 
 Vì thế người xưa có lời nói “Lâm Tế tướng quân, Tào Động nông dân” do gia phong Lâm Tế như tướng chỉ huy binh lính trăm vạn, mà gia phong Tào Động thì như kẻ nông phu canh tác ruộng đất rất chu đáo vậy.
 
-*️⃣ Có Tăng hỏi Phần Dương Thiệu Chiêu Thiền Sư:
+*️⃣ Có Tăng hỏi **Phần Dương Thiệu Chiêu** thiền sư:
 
 ❓: Thế nào là **Chánh trung Lai**?
 
-- Đáp: “**Bông sen nở đầy trên đất khô**”.
+- Đáp: 
+
+> Bông sen nở đầy trên đất khô
 
 ❓: “Sau khi sen nở thế nào?”.
 
-- Đáp: “**Nhụy bông Kim Liên hứng sương ngọc. Cao Tăng chẳng tọa đài Phượng Hoàng**”.
+- Đáp:
+
+> Nhụy bông Kim Liên hứng sương ngọc
+> 
+> Cao Tăng chẳng tọa đài Phượng Hoàng
 
 ❓: Thế nào là **Chánh trung Thiên**?
 
-- Đáp: “**Mặt trăng chiếu sáng đầu đêm rồi. Gà gáy phải báo trước canh năm**”.
+- Đáp:
 
-❓ Thế nào là **Thiên trung Chánh**?
+> Mặt trăng chiếu sáng đầu đêm rồi 
+> 
+> Gà gáy phải báo trước canh năm
 
-- Đáp: “**Mầm nhỏ thành cây to. Giọt nước làm sông ngòi**”.
+❓: Thế nào là **Thiên trung Chánh**?
 
-❓ Thế nào là **Thiên trung Chí**?
+- Đáp:
 
-- Đáp: “**Ý khí chẳng đắc từ thiên địa. Anh hùng đâu nương thời thế thành**”.
+> Mầm nhỏ thành cây to
+> 
+> Giọt nước làm sông ngòi
 
-❓ Thế nào là **Kiêm trung Đáo**?
+❓: Thế nào là **Thiên trung Chí**?
 
-- Đáp: “**Ngọc nữ dệt vải thuyền ọt ẹt. Người đá đánh trống tiếng đùng đùng**”.
+- Đáp:
 
-⭐️ Thiền Sư Phần Dương Thiệu Chiêu vì Tăng xin hỏi Ngũ Vị, bèn tụng ra từng vị rằng:
+> Ý khí chẳng đắc từ thiên địa
+> 
+> Anh hùng đâu nương thời thế thành
 
-🪞 Chánh trung Lai
+❓: Thế nào là **Kiêm trung Đáo**?
+
+- Đáp:
+
+> Ngọc nữ dệt vải thuyền ọt ẹt
+> 
+> Người đá đánh trống tiếng đùng đùng
+
+⭐️ Thiền sư **Phần Dương Thiệu Chiêu** vì Tăng xin hỏi **Ngũ Vị**, bèn tụng ra từng vị rằng:
+
+🪞 **Chánh trung Lai**
 
 > Bửu kiếm Kim Cang vạch trời ra,
 > 
@@ -327,7 +349,7 @@ Vì thế người xưa có lời nói “Lâm Tế tướng quân, Tào Động
 > 
 > Phẩm tính sáng tỏ tuyệt trần ai.
 
-🪞 Chánh trung Thiên
+🪞 **Chánh trung Thiên**
 
 > Cơ phong sấm sét nháy mắt nhìn,
 > 
@@ -335,7 +357,7 @@ Vì thế người xưa có lời nói “Lâm Tế tướng quân, Tào Động
 > 
 > Suy nghĩ đo lường xa ngàn dặm.
 
-🪞 Thiên trung Chánh
+🪞 **Thiên trung Chánh**
 
 > Hãy xem Luân Vương ban chánh lệnh,
 > 
@@ -343,7 +365,7 @@ Vì thế người xưa có lời nói “Lâm Tế tướng quân, Tào Động
 > 
 > Giữa đường một mình tìm gương vàng.
 
-🪞 Thiên trung Chí
+🪞 **Thiên trung Chí**
 
 > Sư tử tuổi oai thế sẵn,
 > 
@@ -351,7 +373,7 @@ Vì thế người xưa có lời nói “Lâm Tế tướng quân, Tào Động
 > 
 > Rống lên một tiếng đều hàng phục.
 
-🪞 Kiêm trung Đáo
+🪞 **Kiêm trung Đáo**
 
 > Hiển bày vô công chớ tạo tác,
 > 
@@ -359,9 +381,9 @@ Vì thế người xưa có lời nói “Lâm Tế tướng quân, Tào Động
 > 
 > Thật là Pháp Vương diệu trung diệu.
 
-⭐️ Còn Ngũ Vị của Từ Minh Sở Viên Thiền Sư rằng:
+⭐️ Còn **Ngũ Vị** của **Từ Minh Sở Viên** thiền sư rằng:
 
-🪞 Chánh trung Lai
+🪞 **Chánh trung Lai**
 
 > Gà đen nửa đêm gáy trong phòng,
 > 
@@ -369,7 +391,7 @@ Vì thế người xưa có lời nói “Lâm Tế tướng quân, Tào Động
 > 
 > Tảng đá trồng bông mọc cây linh.
 
-🪞 Chánh trung Thiên
+🪞 **Chánh trung Thiên**
 
 > Mặt trời lặn xuống hiện bóng lạ,
 > 
@@ -377,7 +399,7 @@ Vì thế người xưa có lời nói “Lâm Tế tướng quân, Tào Động
 > 
 > Lông mày chớ nhìn trăng trong giếng.
 
-🪞 Thiên trung Chánh
+🪞 **Thiên trung Chánh**
 
 > Ngựa gỗ sinh con khắp thiên hạ,
 > 
@@ -385,7 +407,7 @@ Vì thế người xưa có lời nói “Lâm Tế tướng quân, Tào Động
 > 
 > Há chẳng người nương ổ chim ở.
 
-🪞 Thiên trung Chí
+🪞 **Thiên trung Chí**
 
 > Mỗi mỗi trượng phu có ý khí,
 > 
@@ -393,7 +415,7 @@ Vì thế người xưa có lời nói “Lâm Tế tướng quân, Tào Động
 > 
 > Tung hoành khai triển chẳng lìa nhau.
 
-🪞 Kiêm trung Đáo
+🪞 **Kiêm trung Đáo**
 
 > Trắng đen chưa rõ chớ tạo tác,
 > 
