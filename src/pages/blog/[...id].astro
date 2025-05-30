@@ -8,14 +8,14 @@ import { badgeVariants } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
 import Layout from '@/layouts/Layout.astro'
-import { getAdjacentPosts, getAllPosts } from '@/lib/data-utils'
+import { getAdjacentPractice, getAllPractice } from '@/lib/data-utils'
 import { formatDate, readingTime } from '@/lib/utils'
 import { Icon } from 'astro-icon/components'
 import { render } from 'astro:content'
 import LikePost from '@/components/LikePost.astro'
 
 export async function getStaticPaths() {
-  const posts = await getAllPosts()
+  const posts = await getAllPractice()
   return posts.map((post) => ({
     params: { id: post.id },
     props: post,
@@ -25,11 +25,11 @@ export async function getStaticPaths() {
 const post = Astro.props
 const currentPostId = Astro.params.id
 const { Content, headings } = await render(post)
-const { next, prev } = await getAdjacentPosts(currentPostId)
+const { next, prev } = await getAdjacentPractice(currentPostId)
 
 const structuredData = {
   '@context': 'https://schema.org',
-  '@type': 'BlogPosting',
+  '@type': 'PracticePosting',
   headline: post.data.title,
   datePublished: post.data.date,
   dateModified: post.data.date,
@@ -46,7 +46,7 @@ const currentUrl = Astro.url;
 
 <Layout canonicalUrl={currentUrl} isWide={true}>
   <PostHead slot="head" post={post} />
-  
+
   <script
     type="application/ld+json"
     is:inline
@@ -58,7 +58,7 @@ const currentUrl = Astro.url;
     <div class="col-start-2">
       <Breadcrumbs
         items={[
-          { href: '/blog', label: 'Blog', icon: 'lucide:archive' },
+          { href: '/practice', label: 'Practice', icon: 'lucide:archive' },
           { label: post.data.title, icon: 'lucide:file-text' },
         ]}
       />
@@ -131,7 +131,7 @@ const currentUrl = Astro.url;
 
       <div class="flex flex-wrap gap-2">
         <Link
-          href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(Astro.site + 'blog/' + post.id)}`}
+          href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(Astro.site + 'practice/' + post.id)}`}
           target="_blank"
           rel="noopener noreferrer"
           title="Share on Facebook"
@@ -142,7 +142,7 @@ const currentUrl = Astro.url;
           </Button>
         </Link>
         <Link
-          href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(Astro.site + 'blog/' + post.id)}`}
+          href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(Astro.site + 'practice/' + post.id)}`}
           target="_blank"
           rel="noopener noreferrer"
           title="Share on Twitter"
@@ -153,7 +153,7 @@ const currentUrl = Astro.url;
           </Button>
         </Link>
         <Link
-          href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(Astro.site + 'blog/' + post.id)}`}
+          href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(Astro.site + 'practice/' + post.id)}`}
           target="_blank"
           rel="noopener noreferrer"
           title="Share on LinkedIn"
@@ -164,7 +164,7 @@ const currentUrl = Astro.url;
           </Button>
         </Link>
         <Link
-          href={`https://www.reddit.com/submit?url=${encodeURIComponent(Astro.site + 'blog/' + post.id)}`}
+          href={`https://www.reddit.com/submit?url=${encodeURIComponent(Astro.site + 'practice/' + post.id)}`}
           target="_blank"
           rel="noopener noreferrer"
           title="Share on Reddit"
@@ -175,7 +175,7 @@ const currentUrl = Astro.url;
           </Button>
         </Link>
         <Link
-          href={`https://wa.me/?text=${encodeURIComponent(Astro.site + 'blog/' + post.id)}`}
+          href={`https://wa.me/?text=${encodeURIComponent(Astro.site + 'practice/' + post.id)}`}
           target="_blank"
           rel="noopener noreferrer"
           title="Share on WhatsApp"
@@ -186,7 +186,7 @@ const currentUrl = Astro.url;
           </Button>
         </Link>
         <Link
-          href={`https://t.me/share/url?url=${encodeURIComponent(Astro.site + 'blog/' + post.id)}`}
+          href={`https://t.me/share/url?url=${encodeURIComponent(Astro.site + 'practice/' + post.id)}`}
           target="_blank"
           rel="noopener noreferrer"
           title="Share on Telegram"
@@ -197,7 +197,7 @@ const currentUrl = Astro.url;
           </Button>
         </Link>
         <Link
-          href={`https://pinterest.com/pin/create/button/?url=${encodeURIComponent(Astro.site + 'blog/' + post.id)}`}
+          href={`https://pinterest.com/pin/create/button/?url=${encodeURIComponent(Astro.site + 'practice/' + post.id)}`}
           target="_blank"
           rel="noopener noreferrer"
           title="Share on Pinterest"
@@ -210,13 +210,13 @@ const currentUrl = Astro.url;
       </div>
 
       <hr class="my-8 hidden md:block" />
-      
+
       <div class="mb-2 mt-4">
         <h2
           id="minds-title"
           class="font-custom text-2xl font-bold text-neutral-900 dark:text-white"
         >
-          Enjoyed this blog?
+          Enjoyed this practice?
         </h2>
         <div class="text-sm text-neutral-500 dark:text-neutral-400 flex items-center flex-wrap">
           Give it a star&nbsp;
@@ -225,11 +225,10 @@ const currentUrl = Astro.url;
             GitHub
             <Icon name="line-md:github" class="size-4" />
           </Link>
-          to support this project and help it grow. Your support means the world!
         </div>
         <div class="mt-4 flex items-center gap-2 justify-center">
           <LikePost post={post} />
-        </div>        
+        </div>
       </div>
     </aside>
 

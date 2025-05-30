@@ -4,7 +4,7 @@ import PageHead from '@/components/PageHead.astro'
 import Search from '@/components/react/search'
 import PaginationComponent from '@/components/ui/pagination'
 import Layout from '@/layouts/Layout.astro'
-import { getAllPosts } from '@/lib/data-utils'
+import { getAllPractice } from '@/lib/data-utils'
 import type { PaginateFunction } from 'astro'
 import { Icon } from 'astro-icon/components'
 
@@ -13,21 +13,21 @@ export async function getStaticPaths({
 }: {
   paginate: PaginateFunction
 }) {
-  const allPosts = await getAllPosts()
+  const allPosts = await getAllPractice()
   return paginate(allPosts, { pageSize: 5 })
 }
 
 const { page } = Astro.props
-const searchList = await getAllPosts()
+const searchList = await getAllPractice()
 const currentUrl = Astro.url;
 ---
 
 <Layout canonicalUrl={currentUrl}>
-  <PageHead slot="head" title="Blog" />
+  <PageHead slot="head" title="Practice" />
 
   <Breadcrumbs
     items={[
-      { label: 'Blog', href: '/blog', icon: 'lucide:archive' },
+      { label: 'Practice', href: '/practice', icon: 'lucide:archive' },
       { label: `Page ${page.currentPage}`, icon: 'lucide:folder-open' },
     ]}
   />
@@ -42,7 +42,7 @@ const currentUrl = Astro.url;
     id="minds-title"
     class="font-custom text-foreground text-4xl font-bold mt-2"
     >
-      Blog
+      Practice
       <Icon name="lucide:star" class="h-4 w-4 text-yellow-500 animate-pulse float-right" />
     </h2>
 
@@ -53,7 +53,7 @@ const currentUrl = Astro.url;
     <PaginationComponent
       currentPage={page.currentPage}
       totalPages={page.lastPage}
-      baseUrl="/blog/"
+      baseUrl="/practice/"
       client:load
     />
   </section>

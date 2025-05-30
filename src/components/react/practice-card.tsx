@@ -2,7 +2,7 @@ import { Badge } from '@/components/ui/badge'
 import { Hash } from 'lucide-react'
 import type { CollectionEntry } from 'astro:content'
 
-const BlogCardJSX = ({ entry }: { entry: CollectionEntry<'blog'> }) => {
+const PracticeCardJSX = ({ entry }: { entry: CollectionEntry<'practice'> }) => {
   return (
     <div className="hover:bg-secondary/50 rounded-xl border p-4 transition-colors duration-300 ease-in-out">
       <a
@@ -17,7 +17,7 @@ const BlogCardJSX = ({ entry }: { entry: CollectionEntry<'blog'> }) => {
 
           {entry.data.tags && (
             <div className="flex flex-wrap gap-2">
-              {entry.data.tags.map((tag, index) => (
+              {entry.data.tags.map((tag: any, index: any) => (
                 <Badge
                   key={index}
                   variant="secondary"
@@ -35,4 +35,4 @@ const BlogCardJSX = ({ entry }: { entry: CollectionEntry<'blog'> }) => {
   )
 }
 
-export default BlogCardJSX
+export default PracticeCardJSX

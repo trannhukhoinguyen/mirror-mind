@@ -15,12 +15,12 @@ export const NAV_LINKS: SocialLink[] = [
     label: 'home',
   },
   {
-    href: '/projects',
-    label: 'projects',
+    href: '/theory',
+    label: 'theory',
   },
   {
-    href: '/blog',
-    label: 'blog',
+    href: '/practice',
+    label: 'practice',
   },
 ]
 

@@ -70,12 +70,18 @@ startDate: '2025-05-28'
 # **China**
 
 ```
-└── Mahākāśyapa (XXVIII)
-    └── Ānanda (XXIX)
-        └── Śānavāsa (XXX)
-            └── Upagupta (XXXI)
-                └── Dhrtaka (XXXII)
-                   └── Miccaka (XXXIII)
+└── Bodhidharma (XXVIII)
+    └── Dazu Huike (XXIX)
+        └── Jianzhi Sengcan (XXX)
+            └── Dayi Daoxin (XXXI)
+                └── Daman Hongren (XXXII)
+                    └── Dajian Huineng (XXXIII)
+                        └── Nanyue Huairang
+                            └── Mazu Daoyi
+                        └── Dajian Huineng
+                        └── Dajian Huineng
+                        └── Dajian Huineng
+                        └── Dajian Huineng
 ```
 
 
@@ -96,21 +102,12 @@ startDate: '2025-05-28'
 ### 🌱 Truyền thừa
 
 ```
-portfolio/
-├── public/                 # Static assets
-├── src/
-│   ├── components/         # UI components
-│   ├── content/            # Content collections
-│   │   ├── blog/           # Blog posts in MD/MDX format
-│   │   └── projects/       # Project data
-│   ├── layouts/            # Page layouts
-│   ├── lib/                # Utility functions
-│   ├── pages/              # Page routes
-│   └── styles/             # Global styles
-├── astro.config.mjs        # Astro configuration
-├── tailwind.config.cjs     # Tailwind CSS configuration
-├── tsconfig.json           # TypeScript configuration
-└── package.json            # Project dependencies
+└── Linji Yixuan (I)
+    └── Xinghua Cunjiang
+        └── Nanyuan Huiyong
+            └── Fengxue Yanzhao
+                └── Shoushan Xingnian
+                   └── Dajian Huineng
 ```
 
 ### 📜 Gia phong - Tông chỉ
@@ -237,21 +234,12 @@ Sư đáp:
 ### 🌱 Truyền thừa
 
 ```
-portfolio/
-├── public/                 # Static assets
-├── src/
-│   ├── components/         # UI components
-│   ├── content/            # Content collections
-│   │   ├── blog/           # Blog posts in MD/MDX format
-│   │   └── projects/       # Project data
-│   ├── layouts/            # Page layouts
-│   ├── lib/                # Utility functions
-│   ├── pages/              # Page routes
-│   └── styles/             # Global styles
-├── astro.config.mjs        # Astro configuration
-├── tailwind.config.cjs     # Tailwind CSS configuration
-├── tsconfig.json           # TypeScript configuration
-└── package.json            # Project dependencies
+└── Linji Yuxuan (I)
+    └── Dazu Huike
+        └── Jianzhi Sengcan
+            └── Dayi Daoxin
+                └── Daman Hongren
+                   └── Dajian Huineng
 ```
 
 ### 📜 Gia phong - Tông chỉ
@@ -269,21 +257,12 @@ Còn Pháp Nhãn Thiền Sư Thập Quy Luận rằng: “Quy Ngưỡng thì vu�
 ### 🌱 Truyền thừa
 
 ```
-portfolio/
-├── public/                 # Static assets
-├── src/
-│   ├── components/         # UI components
-│   ├── content/            # Content collections
-│   │   ├── blog/           # Blog posts in MD/MDX format
-│   │   └── projects/       # Project data
-│   ├── layouts/            # Page layouts
-│   ├── lib/                # Utility functions
-│   ├── pages/              # Page routes
-│   └── styles/             # Global styles
-├── astro.config.mjs        # Astro configuration
-├── tailwind.config.cjs     # Tailwind CSS configuration
-├── tsconfig.json           # TypeScript configuration
-└── package.json            # Project dependencies
+└── Linji Yuxuan (I)
+    └── Dazu Huike
+        └── Jianzhi Sengcan
+            └── Dayi Daoxin
+                └── Daman Hongren
+                   └── Dajian Huineng
 ```
 
 ### 📜 Gia phong - Tông chỉ
@@ -430,21 +409,12 @@ Vì thế người xưa có lời nói “Lâm Tế tướng quân, Tào Động
 ### 🌱 Truyền thừa
 
 ```
-portfolio/
-├── public/                 # Static assets
-├── src/
-│   ├── components/         # UI components
-│   ├── content/            # Content collections
-│   │   ├── blog/           # Blog posts in MD/MDX format
-│   │   └── projects/       # Project data
-│   ├── layouts/            # Page layouts
-│   ├── lib/                # Utility functions
-│   ├── pages/              # Page routes
-│   └── styles/             # Global styles
-├── astro.config.mjs        # Astro configuration
-├── tailwind.config.cjs     # Tailwind CSS configuration
-├── tsconfig.json           # TypeScript configuration
-└── package.json            # Project dependencies
+└── Linji Yuxuan (I)
+    └── Dazu Huike
+        └── Jianzhi Sengcan
+            └── Dayi Daoxin
+                └── Daman Hongren
+                   └── Dajian Huineng
 ```
 
 ### 📜 Gia phong - Tông chỉ
@@ -464,21 +434,12 @@ Gia phong của Pháp Nhãn Tông có **Lục Tướng** và **Tứ Liệu Giả
 4️⃣ Bất văn bất văn (ám)
 
 ```
-portfolio/
-├── public/                 # Static assets
-├── src/
-│   ├── components/         # UI components
-│   ├── content/            # Content collections
-│   │   ├── blog/           # Blog posts in MD/MDX format
-│   │   └── projects/       # Project data
-│   ├── layouts/            # Page layouts
-│   ├── lib/                # Utility functions
-│   ├── pages/              # Page routes
-│   └── styles/             # Global styles
-├── astro.config.mjs        # Astro configuration
-├── tailwind.config.cjs     # Tailwind CSS configuration
-├── tsconfig.json           # TypeScript configuration
-└── package.json            # Project dependencies
+└── Linji Yuxuan (I)
+    └── Dazu Huike
+        └── Jianzhi Sengcan
+            └── Dayi Daoxin
+                └── Daman Hongren
+                   └── Dajian Huineng
 ```
 
 ***
@@ -488,21 +449,12 @@ portfolio/
 ### 🌱 Truyền thừa
 
 ```
-portfolio/
-├── public/                 # Static assets
-├── src/
-│   ├── components/         # UI components
-│   ├── content/            # Content collections
-│   │   ├── blog/           # Blog posts in MD/MDX format
-│   │   └── projects/       # Project data
-│   ├── layouts/            # Page layouts
-│   ├── lib/                # Utility functions
-│   ├── pages/              # Page routes
-│   └── styles/             # Global styles
-├── astro.config.mjs        # Astro configuration
-├── tailwind.config.cjs     # Tailwind CSS configuration
-├── tsconfig.json           # TypeScript configuration
-└── package.json            # Project dependencies
+└── Linji Yuxuan (I)
+    └── Dazu Huike
+        └── Jianzhi Sengcan
+            └── Dayi Daoxin
+                └── Daman Hongren
+                   └── Dajian Huineng
 ```
 
 ### 📜 Gia phong - Tông chỉ

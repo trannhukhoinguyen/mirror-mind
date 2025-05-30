@@ -1,11 +1,11 @@
 import { SITE } from '@/consts'
 import type { APIContext } from 'astro'
-import { getAllPosts, getAllProjects, getAllTags } from '@/lib/data-utils'
+import { getAllPractice, getAllTheory, getAllTags } from '@/lib/data-utils'
 
 export async function GET(context: APIContext) {
   try {
-    const posts = await getAllPosts()
-    const projects = await getAllProjects()
+    const posts = await getAllPractice()
+    const theories = await getAllTheory()
     const tags = await getAllTags()
     const site = context.site ?? SITE.href
     const baseUrl = site.toString().endsWith('/') ? site.toString().slice(0, -1) : site.toString()
@@ -18,29 +18,29 @@ export async function GET(context: APIContext) {
         priority: '1.0'
       },
       {
-        url: `${baseUrl}/projects`,
+        url: `${baseUrl}/theory`,
         lastmod: new Date().toISOString(),
         changefreq: 'weekly',
         priority: '0.8'
       },
       {
-        url: `${baseUrl}/blog`,
+        url: `${baseUrl}/practice`,
         lastmod: new Date().toISOString(),
         changefreq: 'weekly',
         priority: '0.8'
       }
     ]
 
-    const blogPosts = posts.map(post => ({
-      url: `${baseUrl}/blog/${post.id}/`,
+    const practicePosts = posts.map(post => ({
+      url: `${baseUrl}/practice/${post.id}/`,
       lastmod: post.data.date.toISOString(),
       changefreq: 'monthly',
       priority: '0.6'
     }))
 
-    const projectPosts = projects.map(project => ({
-      url: `${baseUrl}/projects/${project.id}/`,
-      lastmod: (project.data.endDate ?? new Date()).toISOString(),
+    const theoryPosts = theories.map(theory => ({
+      url: `${baseUrl}/theory/${theory.id}/`,
+      lastmod: (theory.data.endDate ?? new Date()).toISOString(),
       changefreq: 'monthly',
       priority: '0.6'
     }))
@@ -52,7 +52,7 @@ export async function GET(context: APIContext) {
       priority: '0.5'
     }))
 
-    const allUrls = [...staticPages, ...projectPosts, ...blogPosts, ...tagUrls]
+    const allUrls = [...staticPages, ...theoryPosts, ...practicePosts, ...tagUrls]
 
     const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">

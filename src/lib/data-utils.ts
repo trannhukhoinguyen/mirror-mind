@@ -1,24 +1,24 @@
 import { getCollection, type CollectionEntry } from 'astro:content'
 
-export async function getAllPosts(): Promise<CollectionEntry<'blog'>[]> {
-  const posts = await getCollection('blog')
+export async function getAllPractice(): Promise<CollectionEntry<'practice'>[]> {
+  const posts = await getCollection('practice')
   return posts
     .filter((post) => !post.data.draft)
     .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
 }
 
-export async function getRecentPosts(
+export async function getRecentPractice(
   count: number,
-): Promise<CollectionEntry<'blog'>[]> {
-  const posts = await getAllPosts()
+): Promise<CollectionEntry<'practice'>[]> {
+  const posts = await getAllPractice()
   return posts.slice(0, count)
 }
 
-export async function getAdjacentPosts(currentId: string): Promise<{
-  prev: CollectionEntry<'blog'> | null
-  next: CollectionEntry<'blog'> | null
+export async function getAdjacentPractice(currentId: string): Promise<{
+  prev: CollectionEntry<'practice'> | null
+  next: CollectionEntry<'practice'> | null
 }> {
-  const posts = await getAllPosts()
+  const posts = await getAllPractice()
   const currentIndex = posts.findIndex((post) => post.id === currentId)
 
   if (currentIndex === -1) {
@@ -32,7 +32,7 @@ export async function getAdjacentPosts(currentId: string): Promise<{
 }
 
 export async function getAllTags(): Promise<Map<string, number>> {
-  const posts = await getAllPosts()
+  const posts = await getAllPractice()
 
   return posts.reduce((acc, post) => {
     post.data.tags?.forEach((tag: string) => {
@@ -55,11 +55,11 @@ export async function getSortedTags(): Promise<
     })
 }
 
-export function groupPostsByYear(
-  posts: CollectionEntry<'blog'>[],
-): Record<string, CollectionEntry<'blog'>[]> {
+export function groupPracticeByYear(
+  posts: CollectionEntry<'practice'>[],
+): Record<string, CollectionEntry<'practice'>[]> {
   return posts.reduce(
-    (acc: Record<string, CollectionEntry<'blog'>[]>, post) => {
+    (acc: Record<string, CollectionEntry<'practice'>[]>, post) => {
       const year = post.data.date.getFullYear().toString()
       ;(acc[year] ??= []).push(post)
       return acc
@@ -68,33 +68,33 @@ export function groupPostsByYear(
   )
 }
 
-export async function getPostsByAuthor(
+export async function getPracticeByAuthor(
   authorId: string,
-): Promise<CollectionEntry<'blog'>[]> {
-  const posts = await getAllPosts()
+): Promise<CollectionEntry<'practice'>[]> {
+  const posts = await getAllPractice()
   return posts.filter((post) => post.data.authors?.includes(authorId))
 }
 
-export async function getPostsByTag(
+export async function getPracticeByTag(
   tag: string,
-): Promise<CollectionEntry<'blog'>[]> {
-  const posts = await getAllPosts()
+): Promise<CollectionEntry<'practice'>[]> {
+  const posts = await getAllPractice()
   return posts.filter((post) => post.data.tags?.includes(tag))
 }
 
-export async function getAllProjects(): Promise<CollectionEntry<'projects'>[]> {
-  const projects = await getCollection('projects')
-  return projects
+export async function getAllTheory(): Promise<CollectionEntry<'theory'>[]> {
+  const theories = await getCollection('theory')
+  return theories
     .sort((a, b) => (b.data.startDate?.valueOf() ?? 0) - (a.data.startDate?.valueOf() ?? 0))
-} 
+}
 
-export async function getProjectsFeaturedTags(maxCount: number): Promise<string[]> {
-  const projects = await getAllProjects()
+export async function getTheoryFeaturedTags(maxCount: number): Promise<string[]> {
+  const theories = await getAllTheory()
   const tags = new Set<string>()
 
-  for (const project of projects) {
-    if (project.data.tags) {
-      for (const tag of project.data.tags) {
+  for (const theory of theories) {
+    if (theory.data.tags) {
+      for (const tag of theory.data.tags) {
         tags.add(tag)
       }
     }

@@ -1,15 +1,15 @@
 ---
 import Link from '@/components/Link.astro'
 import PageHead from '@/components/PageHead.astro'
-import BlogCard from '@/components/react/blog-card'
+import PracticeCard from '@/components/react/practice-card'
 import Minds from '@/components/react/minds'
 import { buttonVariants } from '@/components/ui/button'
 import Logo from '@/components/ui/logo'
 import Layout from '@/layouts/Layout.astro'
-import { getRecentPosts } from '@/lib/data-utils'
+import { getRecentPractice } from '@/lib/data-utils'
 import { SITE } from '@/consts'
 
-const blog = await getRecentPosts(3);
+const practice = await getRecentPractice(3);
 const currentUrl = Astro.url;
 const title = "Practise Patriarchal Zen";
 ---
@@ -83,31 +83,31 @@ const title = "Practise Patriarchal Zen";
     </section>
 
     <section class="flex flex-col gap-y-4" aria-labelledby="latest-posts-title" role="region">
-      <div class="relative" aria-labelledby="latest-posts-title">
+      <div class="relative" aria-labelledby="latest-practice-title">
         <h2
-          id="latest-posts-title"
+          id="latest-practice-title"
           class="font-custom text-foreground text-2xl font-bold"
-          title="latest blog posts"
-          aria-label="latest blog posts"
+          title="latest practice practice"
+          aria-label="latest practice practice
         >
           Latest
         </h2>
-        <p class="text-muted-foreground text-sm" aria-label="blog description">
+        <p class="text-muted-foreground text-sm" aria-label="practice description">
           ...
         </p>
       </div>
       <ul class="flex flex-col gap-y-4">
         {
-          blog.map((post) => (
+          practice.map((post) => (
             <li>
-              <BlogCard entry={post} />
+              <PracticeCard entry={post} />
             </li>
           ))
         }
       </ul>
       <div class="flex justify-center" aria-label="see all posts">
         <Link
-          href="/blog"
+          href="/practice"
           class={buttonVariants({ variant: 'ghost' }) + ' group'}
         >
           See all <span

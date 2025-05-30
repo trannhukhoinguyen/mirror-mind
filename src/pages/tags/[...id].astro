@@ -1,7 +1,7 @@
 ---
 import Breadcrumbs from '@/components/Breadcrumbs.astro'
 import PageHead from '@/components/PageHead.astro'
-import BlogCard from '@/components/react/blog-card'
+import PracticeCard from '@/components/react/practice-card'
 import Layout from '@/layouts/Layout.astro'
 import { getAllTags, getPostsByTag } from '@/lib/data-utils'
 import { Icon } from 'astro-icon/components'
@@ -54,7 +54,7 @@ const currentUrl = Astro.url;
     {
       posts.map((post) => (
         <li>
-          <BlogCard entry={post} />
+          <PracticeCard entry={post} />
         </li>
       ))
     }

@@ -3,7 +3,7 @@ import { SITE } from '@/consts'
 import type { CollectionEntry } from 'astro:content'
 
 interface Props {
-  post: CollectionEntry<'blog'>
+  post: CollectionEntry<'practice'>
 }
 
 const { post } = Astro.props
@@ -50,7 +50,7 @@ const author = post.data.authors ? post.data.authors.join(', ') : SITE.author
 
 <script type="application/ld+json" is:inline set:html={JSON.stringify({
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
+  "@type": "PracticePosting",
   "headline": title,
   "description": description,
   "image": image,

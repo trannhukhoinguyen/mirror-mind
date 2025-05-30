@@ -1,6 +1,6 @@
 ---
 import { SITE } from '@/consts'
-import { getAllPosts } from '@/lib/data-utils'
+import { getAllPractice } from '@/lib/data-utils'
 interface Props {
   title?: string
   description?: string
@@ -8,7 +8,7 @@ interface Props {
 
 const { title = SITE.title, description = SITE.description } = Astro.props
 const image = new URL('/ogImage.png', Astro.site).toString()
-const posts = await getAllPosts()
+const posts = await getAllPractice()
 ---
 
 <title>{`${SITE.title} - ${title}`}</title>
@@ -47,15 +47,15 @@ const posts = await getAllPosts()
       "target": "${SITE.href}/search?q={search_term_string}",
       "query-input": "required name=search_term_string"
     },
-    "blogPosts": [
+    "practicePosts": [
       ${posts
         .map(
           (post) => `{
-        "@type": "BlogPosting",
+        "@type": "PracticePosting",
         "headline": "${post.data.title}",
         "description": "${post.data.description}",
-        "url": "${SITE.href}/blog/${post.id}",
-        "datePublished": "/blog/${post.id}",
+        "url": "${SITE.href}/practice/${post.id}",
+        "datePublished": "/practice/${post.id}",
         "author": {
           "@type": "Person",
           "name": "${SITE.author}"
