@@ -7,49 +7,75 @@ link: 'https://tosuthien.vercel.app'
 startDate: '2025-05-28'
 ---
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # **India**
 
 ```
 Śākyamuni Buddha
-└── Mahākāśyapa (I)
-    └── Ānanda (II)
-        └── Śānavāsa (III)
+└── Mahakasyapa (I)
+    └── Ananda (II)
+        └── Shanavashin (III)
             └── Upagupta (IV)
-                └── Dhrtaka (V)
-                   └── Miccaka (VI)
+                └── Dhitika (V)
+                   └── Mishaka (VI)
                         └── Vasumitra (VII)
                             └── Buddhanandi (VIII)
                                 └── Buddhamitra (IX)
-                                    └── Pārśva (X)   
-                                        └── Punyayaśas (XI)
-                                            └── Mahākāśyapa (XII)
-                                                └── Ānanda (XIII)
-                                                    └── Śānavāsa (XIV)
-                                                        └── Upagupta (XV)
-                                                            └── Dhrtaka (XVI)
-                                                               └── Miccaka (XVII)
-                                                                    └── Vasumitra (XVIII)
-                                                                        └── Buddhanandi (XIX)          
-                                                                            └── Buddhamitra  (XX)
-                                                                                └── Pārśva (XXI)
-                                                                                    └── Punyayaśas (XXII)
-                                                                                       └── Buddhanandi (XXIII)          
-                                                                                            └── Buddhamitra (XXIV)
-                                                                                                └── Pārśva (XXV)
-                                                                                                    └── Punyayaśas (XXVI)                                                                                                    
-                                                                                                        └── Bodhidharma (XXVII)
+                                    └── Parshva (X)   
+                                        └── Punyayasha (XI)
+                                            └── Anabodhi (XII)
+                                                └── Kapimala (XIII)
+                                                    └── Nagarjuna (XIV)
+                                                        └── Kanadeva (XV)
+                                                            └── Rahulabhadra (XVI)
+                                                               └── Samghanandi (XVII)
+                                                                    └── Samghayathata (XVIII)
+                                                                        └── Kumaralata (XIX)          
+                                                                            └── Shayata (XX)
+                                                                                └── Vasubandhu (XXI)
+                                                                                    └── Manorata (XXII)
+                                                                                       └── Haklenayasha (XXIII)          
+                                                                                            └── Simhabodhi (XXIV)
+                                                                                                └── Bashashita (XXV)
+                                                                                                    └── Punyamitra (XXVI)                                                                                                    
+                                                                                                        └── Prajnadhara (XXVII)                                                                                                    
+                                                                                                            └── Bodhidharma (XXVIII)
 ```
 
 # **China**
 
 ```
-Bodhidharma (XXVII)
-└── Mahākāśyapa
-    └── Ānanda          
-        └── Śānavāsa           
-            └── Upagupta   
-                └── Dhrtaka
-                   └── Miccaka
+└── Mahākāśyapa (XXVIII)
+    └── Ānanda (XXIX)
+        └── Śānavāsa (XXX)
+            └── Upagupta (XXXI)
+                └── Dhrtaka (XXXII)
+                   └── Miccaka (XXXIII)
 ```
 
 
@@ -262,37 +288,38 @@ portfolio/
 
 ### 📜 Gia phong - Tông chỉ
 
-“Tào Động là xướng họa làm dụng”, bởi gia phong một vấn một đáp, qua lại miên mật, so với cơ phong thẳng tắp của Lâm Tế ý thú khác xa. Nên người xưa có lời nói “Lâm Tế tướng quân, Tào Động nông dân”. Vì gia phong Lâm Tế như tướng chỉ huy binh lính trăm vạn, mà gia phong Tào Động thì như kẻ nông phu canh tác ruộng đất rất chu đáo vậy.
+“Tào Động là xướng họa làm dụng”, bởi gia phong một vấn một đáp, qua lại miên mật, so với cơ phong thẳng tắp của Lâm Tế ý thú khác xa. 
+Vì thế người xưa có lời nói “Lâm Tế tướng quân, Tào Động nông dân” do gia phong Lâm Tế như tướng chỉ huy binh lính trăm vạn, mà gia phong Tào Động thì như kẻ nông phu canh tác ruộng đất rất chu đáo vậy.
 
 *️⃣ Có Tăng hỏi Phần Dương Thiệu Chiêu Thiền Sư:
 
-❓: “Thế nào là **Chánh trung Lai**?”.
+❓: Thế nào là **Chánh trung Lai**?
 
 - Đáp: “**Bông sen nở đầy trên đất khô**”.
 
 ❓: “Sau khi sen nở thế nào?”.
 
-- Đáp: “**Nhụy bông Kim Liên hứng sương ngọc, cao Tăng chẳng tọa đài Phượng Hoàng**”.
+- Đáp: “**Nhụy bông Kim Liên hứng sương ngọc. Cao Tăng chẳng tọa đài Phượng Hoàng**”.
 
-❓: “Thế nào là **Chánh trung Thiên**?”.
+❓: Thế nào là **Chánh trung Thiên**?
 
-- Đáp: “**Mặt trăng chiếu sáng đầu đêm rồi, gà gáy phải báo trước canh năm**”.
+- Đáp: “**Mặt trăng chiếu sáng đầu đêm rồi. Gà gáy phải báo trước canh năm**”.
 
 ❓ Thế nào là **Thiên trung Chánh**?
 
-- Đáp: “**Mầm nhỏ thành cây to, giọt nước làm sông ngòi**”.
+- Đáp: “**Mầm nhỏ thành cây to. Giọt nước làm sông ngòi**”.
 
 ❓ Thế nào là **Thiên trung Chí**?
 
-- Đáp: “**Ý khí chẳng đắc từ thiên địa, anh hùng đâu nương thời thế thành**”.
+- Đáp: “**Ý khí chẳng đắc từ thiên địa. Anh hùng đâu nương thời thế thành**”.
 
-❓ thế nào là **Kiêm trung Đáo**?
+❓ Thế nào là **Kiêm trung Đáo**?
 
-- Đáp: “**Ngọc nữ dệt vải thuyền ọt ẹt, người đá đánh trống tiếng đùng đùng**”.
+- Đáp: “**Ngọc nữ dệt vải thuyền ọt ẹt. Người đá đánh trống tiếng đùng đùng**”.
 
-⭐️ Thiền Sư Phần Dương Thiệu Chiêu vì Tăng xin hỏi Ngũ vị, bèn tụng ra từng vị rằng:
+⭐️ Thiền Sư Phần Dương Thiệu Chiêu vì Tăng xin hỏi Ngũ Vị, bèn tụng ra từng vị rằng:
 
-#### Chánh trung Lai
+🪞 Chánh trung Lai
 
 > Bửu kiếm Kim Cang vạch trời ra,
 > 
@@ -300,7 +327,7 @@ portfolio/
 > 
 > Phẩm tính sáng tỏ tuyệt trần ai.
 
-#### Chánh trung Thiên
+🪞 Chánh trung Thiên
 
 > Cơ phong sấm sét nháy mắt nhìn,
 > 
@@ -308,7 +335,7 @@ portfolio/
 > 
 > Suy nghĩ đo lường xa ngàn dặm.
 
-#### Thiên trung Chánh
+🪞 Thiên trung Chánh
 
 > Hãy xem Luân Vương ban chánh lệnh,
 > 
@@ -316,7 +343,7 @@ portfolio/
 > 
 > Giữa đường một mình tìm gương vàng.
 
-#### Thiên trung Chí
+🪞 Thiên trung Chí
 
 > Sư tử tuổi oai thế sẵn,
 > 
@@ -324,7 +351,7 @@ portfolio/
 > 
 > Rống lên một tiếng đều hàng phục.
 
-#### Kiêm trung Đáo
+🪞 Kiêm trung Đáo
 
 > Hiển bày vô công chớ tạo tác,
 > 
@@ -334,7 +361,7 @@ portfolio/
 
 ⭐️ Còn Ngũ Vị của Từ Minh Sở Viên Thiền Sư rằng:
 
-#### Chánh trung Lai
+🪞 Chánh trung Lai
 
 > Gà đen nửa đêm gáy trong phòng,
 > 
@@ -342,7 +369,7 @@ portfolio/
 > 
 > Tảng đá trồng bông mọc cây linh.
 
-#### Chánh trung Thiên
+🪞 Chánh trung Thiên
 
 > Mặt trời lặn xuống hiện bóng lạ,
 > 
@@ -350,7 +377,7 @@ portfolio/
 > 
 > Lông mày chớ nhìn trăng trong giếng.
 
-#### Thiên trung Chánh
+🪞 Thiên trung Chánh
 
 > Ngựa gỗ sinh con khắp thiên hạ,
 > 
@@ -358,7 +385,7 @@ portfolio/
 > 
 > Há chẳng người nương ổ chim ở.
 
-#### Thiên trung Chí
+🪞 Thiên trung Chí
 
 > Mỗi mỗi trượng phu có ý khí,
 > 
@@ -366,7 +393,7 @@ portfolio/
 > 
 > Tung hoành khai triển chẳng lìa nhau.
 
-#### Kiêm trung Đáo
+🪞 Kiêm trung Đáo
 
 > Trắng đen chưa rõ chớ tạo tác,
 > 
