@@ -4,7 +4,7 @@ import { getAllPractice, getAllTheory, getAllTags } from '@/lib/data-utils'
 
 export async function GET(context: APIContext) {
   try {
-    const posts = await getAllPractice()
+    const practices = await getAllPractice()
     const theories = await getAllTheory()
     const tags = await getAllTags()
     const site = context.site ?? SITE.href
@@ -31,9 +31,9 @@ export async function GET(context: APIContext) {
       }
     ]
 
-    const practicePosts = posts.map(post => ({
-      url: `${baseUrl}/practice/${post.id}/`,
-      lastmod: post.data.date.toISOString(),
+    const practicePosts = practices.map(practice => ({
+      url: `${baseUrl}/practice/${practice.id}/`,
+      lastmod: practice.data.date.toISOString(),
       changefreq: 'monthly',
       priority: '0.6'
     }))
