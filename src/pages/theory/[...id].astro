@@ -86,7 +86,7 @@ const currentUrl = Astro.url;
     </section>
 
     <Image
-      src={theory.data.image}
+      src={theory.data.image || ""}
       alt={theory.data.name}
       class="col-start-2 mb-8 h-auto w-full rounded-3xl object-cover"
       loading="lazy"
