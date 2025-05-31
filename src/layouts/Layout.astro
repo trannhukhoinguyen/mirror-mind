@@ -19,7 +19,6 @@ const {
 <html lang={SITE.locale}>
   <Head>
     <slot name="head" />
-    <script src="https://analytics.ahrefs.com/analytics.js" data-key="+FHMgRP7/Duxaq5D0gZtJw" async></script>
     <link rel="sitemap" href="/sitemap.xml" />
     <script is:inline data-astro-rerun>
       (function() {
@@ -62,15 +61,5 @@ const {
       </main>
       <Footer />
     </div>
-    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-QVK59XQK72"
-    ></script>
-    <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-QVK59XQK72");
-    </script>
   </body>
 </html>

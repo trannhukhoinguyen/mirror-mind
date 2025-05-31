@@ -3,8 +3,8 @@ import { getCollection, type CollectionEntry } from 'astro:content'
 export async function getAllPractice(): Promise<CollectionEntry<'practice'>[]> {
   const posts = await getCollection('practice')
   return posts
-    .filter((post: any) => !post.data.draft)
-    .sort((a: any, b: any) => b.data.date.valueOf() - a.data.date.valueOf())
+    .filter((post) => !post.data.draft)
+    .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
 }
 
 export async function getRecentPractice(
@@ -82,19 +82,19 @@ export async function getPracticeByTag(
   return posts.filter((post) => post.data.tags?.includes(tag))
 }
 
-export async function getAllTheory(): Promise<CollectionEntry<'theory'>[]> {
-  const theories = await getCollection('theory')
-  return theories
-    .sort((a: any, b: any) => (b.data.startDate?.valueOf() ?? 0) - (a.data.startDate?.valueOf() ?? 0))
+export async function getAlldDoctrines(): Promise<CollectionEntry<'doctrines'>[]> {
+  const doctrines = await getCollection('doctrines')
+  return doctrines
+    .sort((a, b) => (b.data.startDate?.valueOf() ?? 0) - (a.data.startDate?.valueOf() ?? 0))
 }
 
 export async function getTheoryFeaturedTags(maxCount: number): Promise<string[]> {
-  const theories = await getAllTheory()
+  const doctrines = await getAlldDoctrines()
   const tags = new Set<string>()
 
-  for (const theory of theories) {
-    if (theory.data.tags) {
-      for (const tag of theory.data.tags) {
+  for (const doctrine of doctrines) {
+    if (doctrine.data.tags) {
+      for (const tag of doctrine.data.tags) {
         tags.add(tag)
       }
     }

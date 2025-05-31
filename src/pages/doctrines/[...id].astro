@@ -3,42 +3,42 @@ import Breadcrumbs from '@/components/Breadcrumbs.astro'
 import TableOfContents from '@/components/TableOfContents.astro'
 import { badgeVariants } from '@/components/ui/badge'
 import Layout from '@/layouts/Layout.astro'
-import { getAllTheory } from '@/lib/data-utils'
+import { getAlldDoctrines } from '@/lib/data-utils'
 import { Icon } from 'astro-icon/components'
 import { Image } from 'astro:assets'
 import { render } from 'astro:content'
 import PageHead from '@/components/PageHead.astro'
 
 export async function getStaticPaths() {
-  const theories = await getAllTheory()
-  return theories.map(theory => ({
-    params: { id: theory.id },
-    props: theory,
+  const doctrines = await getAlldDoctrines()
+  return doctrines.map((doctrine) => ({
+    params: { id: doctrine.id },
+    props: doctrine,
   }))
 }
 
-const theory = Astro.props
-const { Content, headings } = await render(theory)
+const doctrine = Astro.props
+const { Content, headings } = await render(doctrine)
 
 const structuredData = {
   '@context': 'https://schema.org',
-  '@type': 'Theory',
-  headline: theory.data.name,
-  datePublished: theory.data.startDate || '',
-  dateModified: theory.data.endDate || theory.data.startDate || '',
+  '@type': 'Doctrine',
+  headline: doctrine.data.name,
+  datePublished: doctrine.data.startDate || '',
+  dateModified: doctrine.data.endDate || doctrine.data.startDate || '',
   author: {
     '@type': 'Person',
     name: 'Author',
   },
-  image: new URL(`/image/${theory.id}.png`, Astro.site).toString(),
-  keywords: theory.data.tags ? theory.data.tags.join(', ') : '',
-  description: theory.data.description || '',
+  image: new URL(`/image/${doctrine.id}.png`, Astro.site).toString(),
+  keywords: doctrine.data.tags ? doctrine.data.tags.join(', ') : '',
+  description: doctrine.data.description || '',
 }
 const currentUrl = Astro.url;
 ---
 
 <Layout canonicalUrl={currentUrl} isWide={true}>
-  <PageHead slot="head" title={theory.data.name} />
+  <PageHead slot="head" title={doctrine.data.name} />
   <script
     type="application/ld+json"
     is:inline
@@ -50,8 +50,8 @@ const currentUrl = Astro.url;
     <div class="col-start-2">
       <Breadcrumbs
         items={[
-          { href: '/theory', label: 'Theory', icon: 'lucide:folder' },
-          { label: theory.data.name, icon: 'lucide:folder-open' },
+          { href: '/doctrines', label: 'Doctrine', icon: 'lucide:folder' },
+          { label: doctrine.data.name, icon: 'lucide:folder-open' },
         ]}
       />
     </div>
@@ -60,13 +60,13 @@ const currentUrl = Astro.url;
         <h1
           class="mb-2 text-3xl leading-tight font-medium text-pretty sm:text-5xl"
         >
-          {theory.data.name}
+          {doctrine.data.name}
         </h1>
 
         <div class="flex flex-wrap justify-start gap-2">
           {
-            theory.data.tags && theory.data.tags.length > 0 ? (
-              theory.data.tags.map((tag) => (
+            doctrine.data.tags && doctrine.data.tags.length > 0 ? (
+              doctrine.data.tags.map((tag) => (
                 <a
                   href={`/tags/${tag}`}
                   class={badgeVariants({ variant: 'secondary' })}
@@ -86,13 +86,13 @@ const currentUrl = Astro.url;
     </section>
 
     <Image
-      src={theory.data.image}
-      alt={theory.data.name}
+      src={doctrine.data.image}
+      alt={doctrine.data.name}
       class="col-start-2 mb-8 h-auto w-full rounded-3xl object-cover"
       loading="lazy"
       fetchpriority="low"
-      width={800}
-      height={600}
+      width={1800}
+      height={1600}
     />
 
     {headings.length > 0 && <TableOfContents headings={headings} />}
@@ -105,23 +105,23 @@ const currentUrl = Astro.url;
     class="group col-start-2 rounded-xl border p-4 xl:sticky xl:top-26 xl:col-start-3 xl:mr-auto xl:ml-8 xl:h-[calc(100vh-5rem)] xl:max-w-fit xl:rounded-none xl:border-none xl:p-0"
   >
     <div class="flex flex-col gap-4 rounded-xl border bg-card p-4 shadow-md transition-all duration-300 group-hover:shadow-lg xl:group-hover:shadow-none xl:group-hover:shadow-none">
-      <h2 class="text-lg font-semibold">Theory Details</h2>
+      <h2 class="text-lg font-semibold">Doctrine Description</h2>
       <div class="flex flex-col gap-2 text-sm text-muted-foreground">
-        <p>{theory.data.description}</p>
+        <p>{doctrine.data.description}</p>
       </div>
 
       <hr class="my-4 border-t" />
 
-      <div class="flex flex-col gap-2 text-sm text-muted-foreground">
-        <h3 class="text-base font-semibold">Theory Links</h3>
+<!--      <div class="flex flex-col gap-2 text-sm text-muted-foreground">
+        <h3 class="text-base font-semibold">Doctrine Links</h3>
         <ul class="list-disc pl-4">
           <li>
-            <a href={theory.data.link} target="_blank" rel="noopener noreferrer">
-              {theory.data.link}
+            <a href={doctrine.data.link} target="_blank" rel="noopener noreferrer">
+              {doctrine.data.link}
             </a>
           </li>
         </ul>
-      </div>
+      </div>-->
     </div>
   </aside>
 

@@ -15,8 +15,8 @@ const practice = defineCollection({
     }),
 })
 
-const theory = defineCollection({
-  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/theory' }),
+const doctrines = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/doctrines' }),
   schema: ({ image }) =>
     z.object({
       name: z.string(),
@@ -28,5 +28,4 @@ const theory = defineCollection({
       endDate: z.coerce.date().optional(),
     }),
 })
-
-export const collections = { practice, theory }
+export const collections = { practice, doctrines }

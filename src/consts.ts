@@ -3,7 +3,7 @@ import type { IconMap, SocialLink, Site } from '@/types'
 export const SITE: Site = {
   title: 'Tổ Sư Thiền',
   description: "",
-  href: 'https://tosuthien.top',
+  href: 'https://tosuthien.vercel.app',
   author: 'Patriarchal Zen',
   locale: 'en-US',
   location: 'Vietnam',
@@ -15,8 +15,8 @@ export const NAV_LINKS: SocialLink[] = [
     label: 'home',
   },
   {
-    href: '/theory',
-    label: 'theory',
+    href: '/doctrines',
+    label: 'doctrines',
   },
   {
     href: '/practice',
