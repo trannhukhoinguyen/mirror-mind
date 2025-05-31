@@ -3,14 +3,14 @@ import Breadcrumbs from '@/components/Breadcrumbs.astro'
 import TableOfContents from '@/components/TableOfContents.astro'
 import { badgeVariants } from '@/components/ui/badge'
 import Layout from '@/layouts/Layout.astro'
-import { getAlldDoctrines } from '@/lib/data-utils'
+import { getAllDoctrines } from '@/lib/data-utils'
 import { Icon } from 'astro-icon/components'
 import { Image } from 'astro:assets'
 import { render } from 'astro:content'
 import PageHead from '@/components/PageHead.astro'
 
 export async function getStaticPaths() {
-  const doctrines = await getAlldDoctrines()
+  const doctrines = await getAllDoctrines()
   return doctrines.map((doctrine) => ({
     params: { id: doctrine.id },
     props: doctrine,

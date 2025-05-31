@@ -1,11 +1,11 @@
 import { SITE } from '@/consts'
 import type { APIContext } from 'astro'
-import { getAllPractice, getAllTheory, getAllTags } from '@/lib/data-utils'
+import { getAllPractice, getAllDoctrines, getAllTags } from '@/lib/data-utils'
 
 export async function GET(context: APIContext) {
   try {
     const practices = await getAllPractice()
-    const theories = await getAllTheory()
+    const doctrines = await getAllDoctrines()
     const tags = await getAllTags()
     const site = context.site ?? SITE.href
     const baseUrl = site.toString().endsWith('/') ? site.toString().slice(0, -1) : site.toString()
@@ -18,7 +18,7 @@ export async function GET(context: APIContext) {
         priority: '1.0'
       },
       {
-        url: `${baseUrl}/theory`,
+        url: `${baseUrl}/doctrines`,
         lastmod: new Date().toISOString(),
         changefreq: 'weekly',
         priority: '0.8'
@@ -38,9 +38,9 @@ export async function GET(context: APIContext) {
       priority: '0.6'
     }))
 
-    const theoryPosts = theories.map(theory => ({
-      url: `${baseUrl}/theory/${theory.id}/`,
-      lastmod: (theory.data.endDate ?? new Date()).toISOString(),
+    const doctrinePosts = doctrines.map(doctrine => ({
+      url: `${baseUrl}/doctrines/${doctrine.id}/`,
+      lastmod: (doctrine.data.endDate ?? new Date()).toISOString(),
       changefreq: 'monthly',
       priority: '0.6'
     }))
@@ -52,7 +52,7 @@ export async function GET(context: APIContext) {
       priority: '0.5'
     }))
 
-    const allUrls = [...staticPages, ...theoryPosts, ...practicePosts, ...tagUrls]
+    const allUrls = [...staticPages, ...doctrinePosts, ...practicePosts, ...tagUrls]
 
     const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">

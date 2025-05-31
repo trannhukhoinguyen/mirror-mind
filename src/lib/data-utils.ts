@@ -82,14 +82,14 @@ export async function getPracticeByTag(
   return posts.filter((post) => post.data.tags?.includes(tag))
 }
 
-export async function getAlldDoctrines(): Promise<CollectionEntry<'doctrines'>[]> {
+export async function getAllDoctrines(): Promise<CollectionEntry<'doctrines'>[]> {
   const doctrines = await getCollection('doctrines')
   return doctrines
     .sort((a, b) => (b.data.startDate?.valueOf() ?? 0) - (a.data.startDate?.valueOf() ?? 0))
 }
 
 export async function getTheoryFeaturedTags(maxCount: number): Promise<string[]> {
-  const doctrines = await getAlldDoctrines()
+  const doctrines = await getAllDoctrines()
   const tags = new Set<string>()
 
   for (const doctrine of doctrines) {
