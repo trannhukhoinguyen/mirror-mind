@@ -15,8 +15,8 @@ const practice = defineCollection({
     }),
 })
 
-const doctrines = defineCollection({
-  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/doctrines' }),
+/*const doctrines = defineCollection({
+  loader: glob({ pattern: '**!/!*.{md,mdx}', base: './src/content/doctrines' }),
   schema: ({ image }) =>
     z.object({
       name: z.string(),
@@ -27,5 +27,18 @@ const doctrines = defineCollection({
       startDate: z.coerce.date().optional(),
       endDate: z.coerce.date().optional(),
     }),
+})*/
+const projects = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/projects' }),
+  schema: ({ image }) =>
+    z.object({
+      name: z.string(),
+      description: z.string(),
+      tags: z.array(z.string()),
+      image: image(),
+      link: z.string().url(),
+      startDate: z.coerce.date().optional(),
+      endDate: z.coerce.date().optional(),
+    }),
 })
-export const collections = { practice, doctrines }
+export const collections = { practice, projects }

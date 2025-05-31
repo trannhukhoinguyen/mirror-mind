@@ -82,8 +82,8 @@ export async function getPracticeByTag(
   return posts.filter((post) => post.data.tags?.includes(tag))
 }
 
-export async function getAllDoctrines(): Promise<CollectionEntry<'doctrines'>[]> {
-  const doctrines = await getCollection('doctrines')
+export async function getAllDoctrines(): Promise<CollectionEntry<'projects'>[]> {
+  const doctrines = await getCollection('projects')
   return doctrines
     .sort((a, b) => (b.data.startDate?.valueOf() ?? 0) - (a.data.startDate?.valueOf() ?? 0))
 }
