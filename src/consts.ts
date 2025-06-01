@@ -16,11 +16,15 @@ export const NAV_LINKS: SocialLink[] = [
   },
   {
     href: '/doctrines',
-    label: 'doctrines',
+    label: 'lý thuyết',
   },
   {
     href: '/practice',
-    label: 'practice',
+    label: 'thực hành',
+  },
+  {
+    href: '/doubts',
+    label: 'nghi ngờ',
   },
 ]
 

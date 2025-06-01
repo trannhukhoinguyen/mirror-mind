@@ -35,6 +35,8 @@ const structuredData = {
   description: doctrine.data.description || '',
 }
 const currentUrl = Astro.url;
+const title = 'Lý thuyết';
+const href = '/doctrines';
 ---
 
 <Layout canonicalUrl={currentUrl} isWide={true}>
@@ -50,7 +52,7 @@ const currentUrl = Astro.url;
     <div class="col-start-2">
       <Breadcrumbs
         items={[
-          { href: '/doctrines', label: 'Doctrine', icon: 'lucide:folder' },
+          { href: href, label: title, icon: 'lucide:folder' },
           { label: doctrine.data.name, icon: 'lucide:folder-open' },
         ]}
       />

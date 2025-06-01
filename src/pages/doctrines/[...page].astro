@@ -20,13 +20,15 @@ export async function getStaticPaths({
 const { page } = Astro.props
 const doctrineData = await getAllDoctrines()
 const currentUrl = Astro.url;
+const title = 'Lý thuyết';
+const href = '/doctrines';
 ---
 
 <Layout canonicalUrl={currentUrl}>
-  <PageHead slot="head" title="Doctrines" />
+  <PageHead slot="head" title={title} />
   <Breadcrumbs
     items={[
-      { label: 'Doctrines', href: '/doctrines', icon: 'lucide:folder' },
+      { label: title, href: href, icon: 'lucide:folder' },
     ]}
   />
 
@@ -41,7 +43,7 @@ const currentUrl = Astro.url;
             id="skills-title"
             class="font-custom text-foreground text-4xl font-bold mt-2"
           >
-            Doctrines
+            {title}
           </h2>
       </div>
     </div>
@@ -98,7 +100,7 @@ const currentUrl = Astro.url;
       <PaginationComponent
         currentPage={page.currentPage}
         totalPages={page.lastPage}
-        baseUrl="/doctrines/"
+        baseUrl={href}
         client:load
       />
     </div>
