@@ -1,12 +1,13 @@
 import { glob } from 'astro/loaders'
 import { defineCollection, z } from 'astro:content'
+import { getAllAnecdote } from './lib/data-utils'
 
 const practice = defineCollection({
   loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/practice' }),
   schema: ({ image }) =>
     z.object({
       title: z.string(),
-      description: z.string(),
+      description: z.string().optional(),
       date: z.coerce.date(),
       image: image().optional(),
       tags: z.array(z.string()).optional(),
@@ -20,7 +21,21 @@ const doubts = defineCollection({
   schema: ({ image }) =>
     z.object({
       title: z.string(),
-      description: z.string(),
+      description: z.string().optional(),
+      date: z.coerce.date(),
+      image: image().optional(),
+      tags: z.array(z.string()).optional(),
+      authors: z.array(z.string()).optional(),
+      draft: z.boolean().optional(),
+    }),
+})
+
+const anecdotes = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/anecdotes' }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      description: z.string().optional(),
       date: z.coerce.date(),
       image: image().optional(),
       tags: z.array(z.string()).optional(),
@@ -47,12 +62,12 @@ const projects = defineCollection({
   schema: ({ image }) =>
     z.object({
       name: z.string(),
-      description: z.string(),
-      tags: z.array(z.string()),
+      description: z.string().optional(),
+      tags: z.array(z.string()).optional(),
       image: image(),
       link: z.string().url(),
       startDate: z.coerce.date().optional(),
       endDate: z.coerce.date().optional(),
     }),
 })
-export const collections = { practice, doubts, projects }
+export const collections = { practice, doubts, anecdotes, projects }

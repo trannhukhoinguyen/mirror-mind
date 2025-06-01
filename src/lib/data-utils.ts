@@ -84,6 +84,31 @@ export async function getAdjacentDoubt(currentId: string): Promise<{
   }
 }
 
+// Type Blog: Anecdote
+export async function getAllAnecdote(): Promise<CollectionEntry<'anecdotes'>[]> {
+  const posts = await getCollection('anecdotes')
+  return posts
+    .filter((post) => !post.data.draft)
+    .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+}
+
+export async function getAdjacentAnecdote(currentId: string): Promise<{
+  prev: CollectionEntry<'anecdotes'> | null
+  next: CollectionEntry<'anecdotes'> | null
+}> {
+  const posts = await getAllAnecdote()
+  const currentIndex = posts.findIndex((post) => post.id === currentId)
+
+  if (currentIndex === -1) {
+    return { prev: null, next: null }
+  }
+
+  return {
+    next: currentIndex > 0 ? posts[currentIndex - 1] : null,
+    prev: currentIndex < posts.length - 1 ? posts[currentIndex + 1] : null,
+  }
+}
+
 // Type Project: Doctrine...
 export async function getAllDoctrines(): Promise<CollectionEntry<'projects'>[]> {
   const doctrines = await getCollection('projects')
@@ -112,7 +137,14 @@ export async function getDoctrinesFeaturedTags(maxCount: number): Promise<string
 
 // All Tags
 export async function getAllTags(): Promise<Map<string, number>> {
-  const posts = await getAllPractice()
+  const practices = await getAllPractice()
+  const doubts = await getAllDoubt()
+  const anecdotes = await getAllAnecdote()
+  const posts = [
+    ...practices,
+    ...doubts,
+    ...anecdotes,
+  ]
 
   return posts.reduce((acc, post) => {
     post.data.tags?.forEach((tag: string) => {

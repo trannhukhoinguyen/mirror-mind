@@ -26,6 +26,10 @@ export const NAV_LINKS: SocialLink[] = [
     href: '/doubts',
     label: 'nghi ngờ',
   },
+  {
+    href: '/anecdotes',
+    label: 'giai thoại',
+  },
 ]
 
 export const SOCIAL_LINKS: SocialLink[] = [
