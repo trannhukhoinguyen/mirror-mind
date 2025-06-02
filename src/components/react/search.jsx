@@ -94,28 +94,24 @@ function Search({ searchList, initialPosts }) {
       <div className="mt-6">
         <ul className="flex flex-col gap-4">
           {filteredPosts.slice(0, 50).map((post, index) => (
-            <li key={post.id || post.slug || index}>
-              <ExerciseCardJSX entry={post} />
-            </li>
-          ))}
-
-          {filteredPosts.slice(0, 50).map((post, index) => (
-            <li key={post.id || post.slug || index}>
-              <DoubtCardJSX entry={post} />
-            </li>
-          ))}
-
-          {filteredPosts.slice(0, 50).map((post, index) => (
-            <li key={post.id || post.slug || index}>
-              <AnecdoteCardJSX entry={post} />
-            </li>
+            post.data.tags?.includes('nghi ngờ')
+              ? <li key={post.id || post.slug || index}>
+                  <DoubtCardJSX entry={post} />
+                </li>
+              : post.data.tags?.includes('giai thoại')
+                ? <li key={post.id || post.slug || index}>
+                    <AnecdoteCardJSX entry={post} />
+                  </li>
+                : <li key={post.id || post.slug || index}>
+                    <ExerciseCardJSX entry={post} />
+                  </li>
           ))}
         </ul>
 
         {filteredPosts.length === 0 && (
           <div className="mt-12 text-center">
             <p className="text-neutral-600 dark:text-neutral-400">
-              No posts found matching your search criteria.
+              Chưa có bài thỏa điều kiện tìm kiếm
             </p>
           </div>
         )}
