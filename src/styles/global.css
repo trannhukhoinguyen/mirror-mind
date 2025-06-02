@@ -3,34 +3,28 @@
 @custom-variant dark (&:is(.dark *));
 
 @font-face {
-  font-family: 'Geist';
-  src: url('/fonts/GeistVF.woff2') format('woff2-variations');
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Geist Mono';
-  src: url('/fonts/GeistMonoVF.woff2') format('woff2-variations');
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'ClashDisplay-Semibold';
-  src:
-    url('/fonts/ClashDisplay-Semibold.woff2') format('woff2'),
-    url('/fonts/ClashDisplay-Semibold.woff') format('woff'),
-    url('/fonts/ClashDisplay-Semibold.ttf') format('truetype');
+  font-family: 'Be Vietnam Pro';
+  src: url('/fonts/BeVietnamPro/BeVietnamPro-Regular.woff2') format('woff2');
   font-weight: 400;
   font-display: swap;
-  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Be Vietnam Pro';
+  src: url('/fonts/BeVietnamPro/BeVietnamPro-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Be Vietnam Pro';
+  src: url('/fonts/BeVietnamPro/BeVietnamPro-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
 }
 
 .font-custom {
-  font-family: 'ClashDisplay-Semibold';
+  font-family: 'BeVietnamPro-Semibold';
 }
 
 :root {
@@ -68,13 +62,12 @@
 
   --radius: 0.5rem;
 
-  --font-sans:
-    Geist, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-sans: 'Be Vietnam Pro', Geist, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --font-mono:
-    Geist Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    'Be Vietnam Pro', Geist Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     'Liberation Mono', 'Courier New', monospace;
-  
+
   --shadow-2xs: 0 1px 3px 0px oklch(0.00 0 0 / 0.05);
   --shadow-xs: 0 1px 3px 0px oklch(0.00 0 0 / 0.05);
   --shadow-sm: 0 1px 3px 0px oklch(0.00 0 0 / 0.10), 0 1px 2px -1px oklch(0.00 0 0 / 0.10);
@@ -83,7 +76,7 @@
   --shadow-lg: 0 1px 3px 0px oklch(0.00 0 0 / 0.10), 0 4px 6px -1px oklch(0.00 0 0 / 0.10);
   --shadow-xl: 0 1px 3px 0px oklch(0.00 0 0 / 0.10), 0 8px 10px -1px oklch(0.00 0 0 / 0.10);
   --shadow-2xl: 0 1px 3px 0px oklch(0.00 0 0 / 0.25);
-  
+
 }
 
 .dark {
@@ -118,7 +111,7 @@
   --sidebar-accent-foreground: oklch(0.97 0 0);
   --sidebar-border: oklch(0.27 0.01 285.81);
   --sidebar-ring: oklch(0.87 0.01 286.27);
-  
+
   --shadow-2xs: 0 1px 3px 0px oklch(0.00 0 0 / 0.05);
   --shadow-xs: 0 1px 3px 0px oklch(0.00 0 0 / 0.05);
   --shadow-sm: 0 1px 3px 0px oklch(0.00 0 0 / 0.10), 0 1px 2px -1px oklch(0.00 0 0 / 0.10);
