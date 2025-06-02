@@ -19,8 +19,8 @@ const categoryGroups = [
 
 const Minds: React.FC = () => {
   useEffect(() => {
-    document.querySelectorAll('.tech-badge').forEach((badge) => {
-      badge.classList.add('tech-badge-visible')
+    document.querySelectorAll('.mind-badge').forEach((badge) => {
+      badge.classList.add('mind-badge-visible')
     })
   }, [])
 
@@ -42,7 +42,7 @@ const Minds: React.FC = () => {
                   return (
                     <div
                       key={`${category}-${mindIndex}`}
-                      className="tech-badge repo-card border-border bg-card text-muted-foreground mr-5 flex items-center gap-3 rounded-full border p-3 shadow-sm backdrop-blur-sm transition-all duration-300 hover:shadow-md"
+                      className="mind-badge repo-card border-border bg-card text-muted-foreground mr-5 flex items-center gap-3 rounded-full border p-3 shadow-sm backdrop-blur-sm transition-all duration-300 hover:shadow-md"
                       data-tech-name={`${category}-${mindIndex}`}
                     >
                       <span className="bg-muted flex h-10 w-10 items-center justify-center rounded-full p-2 text-lg shadow-inner">
