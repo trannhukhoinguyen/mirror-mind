@@ -58,7 +58,7 @@ const posts = [
       ${posts
         .map(
           (post) => `{
-        "@type": "PracticePosting",
+        "@type": "ExercisePosting",
         "headline": "${post.data.title}",
         "description": "${post.data.description}",
         "url": "${SITE.href}/practice/${post.id}",

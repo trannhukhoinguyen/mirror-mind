@@ -3,7 +3,7 @@ import Breadcrumbs from '@/components/Breadcrumbs.astro'
 import PageHead from '@/components/PageHead.astro'
 import PaginationComponent from '@/components/ui/pagination'
 import Layout from '@/layouts/Layout.astro'
-import { getAllDoctrines } from '@/lib/data-utils'
+import { getAllDoctrine } from '@/lib/data-utils'
 import type { PaginateFunction } from 'astro'
 import { Icon } from 'astro-icon/components'
 import { Image } from 'astro:assets'
@@ -13,12 +13,12 @@ export async function getStaticPaths({
 }: {
   paginate: PaginateFunction
 }) {
-  const allDoctrines = await getAllDoctrines()
+  const allDoctrines = await getAllDoctrine()
   return paginate(allDoctrines, { pageSize: 6 })
 }
 
 const { page } = Astro.props
-const doctrineData = await getAllDoctrines()
+const doctrineData = await getAllDoctrine()
 const currentUrl = Astro.url;
 const title = 'Lý thuyết';
 const href = '/doctrines';

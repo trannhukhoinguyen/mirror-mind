@@ -1,11 +1,13 @@
 import { SITE } from '@/consts'
 import type { APIContext } from 'astro'
-import { getAllPractice, getAllDoctrines, getAllTags } from '@/lib/data-utils'
+import { getAllExercise, getAllDoubt,  getAllAnecdote, getAllDoctrine, getAllTags } from '@/lib/data-utils'
 
 export async function GET(context: APIContext) {
   try {
-    const practices = await getAllPractice()
-    const doctrines = await getAllDoctrines()
+    const exercises = await getAllExercise()
+    const doubts = await getAllDoubt()
+    const anecdotes = await getAllAnecdote()
+    const doctrines = await getAllDoctrine()
     const tags = await getAllTags()
     const site = context.site ?? SITE.href
     const baseUrl = site.toString().endsWith('/') ? site.toString().slice(0, -1) : site.toString()
@@ -24,15 +26,41 @@ export async function GET(context: APIContext) {
         priority: '0.8'
       },
       {
-        url: `${baseUrl}/practice`,
+        url: `${baseUrl}/exercises`,
+        lastmod: new Date().toISOString(),
+        changefreq: 'weekly',
+        priority: '0.8'
+      },
+      {
+        url: `${baseUrl}/doubts`,
+        lastmod: new Date().toISOString(),
+        changefreq: 'weekly',
+        priority: '0.8'
+      },
+      {
+        url: `${baseUrl}/anecdotes`,
         lastmod: new Date().toISOString(),
         changefreq: 'weekly',
         priority: '0.8'
       }
     ]
 
-    const practicePosts = practices.map(practice => ({
-      url: `${baseUrl}/practice/${practice.id}/`,
+    const exercisePosts = exercises.map(practice => ({
+      url: `${baseUrl}/exercises/${practice.id}/`,
+      lastmod: practice.data.date.toISOString(),
+      changefreq: 'monthly',
+      priority: '0.6'
+    }))
+
+    const doubtPosts = doubts.map(practice => ({
+      url: `${baseUrl}/doubts/${practice.id}/`,
+      lastmod: practice.data.date.toISOString(),
+      changefreq: 'monthly',
+      priority: '0.6'
+    }))
+
+    const anecdotePosts = anecdotes.map(practice => ({
+      url: `${baseUrl}/anecdotes/${practice.id}/`,
       lastmod: practice.data.date.toISOString(),
       changefreq: 'monthly',
       priority: '0.6'
@@ -52,7 +80,7 @@ export async function GET(context: APIContext) {
       priority: '0.5'
     }))
 
-    const allUrls = [...staticPages, ...doctrinePosts, ...practicePosts, ...tagUrls]
+    const allUrls = [...staticPages, ...doctrinePosts, ...exercisePosts, ...doubtPosts, ...anecdotePosts, ...tagUrls]
 
     const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">

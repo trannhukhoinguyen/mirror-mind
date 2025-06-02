@@ -1,5 +1,4 @@
 import { getCollection, type CollectionEntry } from 'astro:content'
-import ExerciseCardJSX from '@/components/react/exercise-card.tsx'
 
 // Type Blog: Exercise
 export async function getAllExercise(): Promise<CollectionEntry<'exercises'>[]> {
@@ -53,7 +52,7 @@ export async function getExerciseByAuthor(
   return posts.filter((post) => post.data.authors?.includes(authorId))
 }
 
-export async function getExerciseByTag(
+export async function getExercisesByTag(
   tag: string,
 ): Promise<CollectionEntry<'exercises'>[]> {
   const posts = await getAllExercise()
@@ -85,6 +84,13 @@ export async function getAdjacentDoubt(currentId: string): Promise<{
   }
 }
 
+export async function getDoubtsByTag(
+  tag: string,
+): Promise<CollectionEntry<'doubts'>[]> {
+  const posts = await getAllDoubt()
+  return posts.filter((post) => post.data.tags?.includes(tag))
+}
+
 // Type Blog: Anecdote
 export async function getAllAnecdote(): Promise<CollectionEntry<'anecdotes'>[]> {
   const posts = await getCollection('anecdotes')
@@ -110,15 +116,22 @@ export async function getAdjacentAnecdote(currentId: string): Promise<{
   }
 }
 
+export async function getAnecdotesByTag(
+  tag: string,
+): Promise<CollectionEntry<'anecdotes'>[]> {
+  const posts = await getAllAnecdote()
+  return posts.filter((post) => post.data.tags?.includes(tag))
+}
+
 // Type Project: Doctrine...
-export async function getAllDoctrines(): Promise<CollectionEntry<'projects'>[]> {
+export async function getAllDoctrine(): Promise<CollectionEntry<'projects'>[]> {
   const doctrines = await getCollection('projects')
   return doctrines
     .sort((a, b) => (b.data.startDate?.valueOf() ?? 0) - (a.data.startDate?.valueOf() ?? 0))
 }
 
-export async function getDoctrinesFeaturedTags(maxCount: number): Promise<string[]> {
-  const doctrines = await getAllDoctrines()
+export async function getDoctrineFeaturedTags(maxCount: number): Promise<string[]> {
+  const doctrines = await getAllDoctrine()
   const tags = new Set<string>()
 
   for (const doctrine of doctrines) {

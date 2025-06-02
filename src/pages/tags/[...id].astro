@@ -1,9 +1,11 @@
 ---
 import Breadcrumbs from '@/components/Breadcrumbs.astro'
 import PageHead from '@/components/PageHead.astro'
-import PracticeCard from '@/components/react/practice-card'
+import ExerciseCard from '@/components/react/exercise-card'
+import DoubtCard from '@/components/react/doubt-card'
+import AnecdoteCard from '@/components/react/anecdote-card'
 import Layout from '@/layouts/Layout.astro'
-import { getAllTags, getPracticeByTag } from '@/lib/data-utils'
+import { getAllTags, getExercisesByTag, getDoubtsByTag, getAnecdotesByTag } from '@/lib/data-utils'
 import { Icon } from 'astro-icon/components'
 
 export async function getStaticPaths() {
@@ -12,19 +14,23 @@ export async function getStaticPaths() {
 
   return Promise.all(
     uniqueTags.map(async (tag) => {
-      const practice = await getPracticeByTag(tag)
+      const exercises = await getExercisesByTag(tag)
+      const doubts = await getDoubtsByTag(tag)
+      const anecdotes = await getAnecdotesByTag(tag)
       return {
         params: { id: tag },
         props: {
           tag,
-          practice,
+          exercises,
+          doubts,
+          anecdotes,
         },
       }
     })
   )
 }
 
-const { tag, practice } = Astro.props
+const { tag, exercises, doubts, anecdotes } = Astro.props
 const currentUrl = Astro.url;
 ---
 
@@ -52,9 +58,25 @@ const currentUrl = Astro.url;
 
   <ul class="flex flex-col gap-y-4">
     {
-      practice.map(practiceItem => (
+      exercises.map(item => (
         <li>
-          <PracticeCard entry={practiceItem} />
+          <ExerciseCard entry={item} />
+        </li>
+      ))
+    }
+
+    {
+      doubts.map(item => (
+        <li>
+          <DoubtCard entry={item} />
+        </li>
+      ))
+    }
+
+    {
+      anecdotes.map(item => (
+        <li>
+          <AnecdoteCard entry={item} />
         </li>
       ))
     }

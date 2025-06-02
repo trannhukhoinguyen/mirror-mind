@@ -19,7 +19,7 @@ export const NAV_LINKS: SocialLink[] = [
     label: 'lý thuyết',
   },
   {
-    href: '/practice',
+    href: '/exercises',
     label: 'thực hành',
   },
   {
