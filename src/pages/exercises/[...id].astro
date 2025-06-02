@@ -8,14 +8,14 @@ import { badgeVariants } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
 import Layout from '@/layouts/Layout.astro'
-import { getAdjacentPractice, getAllPractice } from '@/lib/data-utils'
+import { getAdjacentExercise, getAllExercise } from '@/lib/data-utils'
 import { formatDate, readingTime } from '@/lib/utils'
 import { Icon } from 'astro-icon/components'
 import { render } from 'astro:content'
 import LikePost from '@/components/LikePost.astro'
 
 export async function getStaticPaths() {
-  const posts = await getAllPractice()
+  const posts = await getAllExercise()
   return posts.map((post) => ({
     params: { id: post.id },
     props: post,
@@ -25,11 +25,11 @@ export async function getStaticPaths() {
 const post = Astro.props
 const currentPostId = Astro.params.id
 const { Content, headings } = await render(post)
-const { next, prev } = await getAdjacentPractice(currentPostId)
+const { next, prev } = await getAdjacentExercise(currentPostId)
 
 const structuredData = {
   '@context': 'https://schema.org',
-  '@type': 'PracticePosting',
+  '@type': 'ExercisePosting',
   headline: post.data.title,
   datePublished: post.data.date,
   dateModified: post.data.date,
@@ -43,7 +43,7 @@ const structuredData = {
 }
 const currentUrl = Astro.url;
 const title = 'Thực hành';
-const href = '/practice';
+const href = '/exercises';
 ---
 
 <Layout canonicalUrl={currentUrl} isWide={true}>
@@ -234,7 +234,7 @@ const href = '/practice';
       </div>
     </aside>
 
-    <PostNavigation prevPost={prev} nextPost={next} />
+    <PostNavigation prevPost={prev} nextPost={next} path={href} />
   </section>
 
   <Button

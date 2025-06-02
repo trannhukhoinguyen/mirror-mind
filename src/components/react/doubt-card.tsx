@@ -2,7 +2,7 @@ import { Badge } from '@/components/ui/badge'
 import { Hash } from 'lucide-react'
 import type { CollectionEntry } from 'astro:content'
 
-const PracticeCardJSX = ({ entry }: { entry: CollectionEntry<'practice'> }) => {
+const DoubtCardJSX = ({ entry }: { entry: CollectionEntry<'doubts'> }) => {
   return (
     <div className="hover:bg-secondary/50 rounded-xl border p-4 transition-colors duration-300 ease-in-out">
       <a
@@ -35,4 +35,4 @@ const PracticeCardJSX = ({ entry }: { entry: CollectionEntry<'practice'> }) => {
   )
 }
 
-export default PracticeCardJSX
+export default DoubtCardJSX

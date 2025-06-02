@@ -1,7 +1,9 @@
 import Fuse from 'fuse.js'
 import { useState, useMemo, useCallback } from 'react'
 import { Input } from '@/components/ui/input'
-import PracticeCardJSX from './practice-card'
+import ExerciseCardJSX from './exercise-card'
+import DoubtCardJSX from './doubt-card'
+import AnecdoteCardJSX from './anecdote-card'
 import debounce from 'lodash.debounce'
 import { cn } from '@/lib/utils'
 
@@ -93,7 +95,19 @@ function Search({ searchList, initialPosts }) {
         <ul className="flex flex-col gap-4">
           {filteredPosts.slice(0, 50).map((post, index) => (
             <li key={post.id || post.slug || index}>
-              <PracticeCardJSX entry={post} />
+              <ExerciseCardJSX entry={post} />
+            </li>
+          ))}
+
+          {filteredPosts.slice(0, 50).map((post, index) => (
+            <li key={post.id || post.slug || index}>
+              <DoubtCardJSX entry={post} />
+            </li>
+          ))}
+
+          {filteredPosts.slice(0, 50).map((post, index) => (
+            <li key={post.id || post.slug || index}>
+              <AnecdoteCardJSX entry={post} />
             </li>
           ))}
         </ul>

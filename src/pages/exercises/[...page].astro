@@ -4,7 +4,7 @@ import PageHead from '@/components/PageHead.astro'
 import Search from '@/components/react/search'
 import PaginationComponent from '@/components/ui/pagination'
 import Layout from '@/layouts/Layout.astro'
-import { getAllPractice } from '@/lib/data-utils'
+import { getAllExercise } from '@/lib/data-utils'
 import type { PaginateFunction } from 'astro'
 import { Icon } from 'astro-icon/components'
 
@@ -13,15 +13,15 @@ export async function getStaticPaths({
 }: {
   paginate: PaginateFunction
 }) {
-  const allPosts = await getAllPractice()
+  const allPosts = await getAllExercise()
   return paginate(allPosts, { pageSize: 5 })
 }
 
 const { page } = Astro.props
-const searchList = await getAllPractice()
+const searchList = await getAllExercise()
 const currentUrl = Astro.url;
 const title = 'Thực hành';
-const href = '/practice';
+const href = '/exercises';
 ---
 
 <Layout canonicalUrl={currentUrl}>

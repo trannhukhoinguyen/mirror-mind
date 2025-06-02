@@ -81,7 +81,7 @@ const href = '/doctrines';
                   {doctrine.data.tags?.slice(0, 2).map((tag) => (
                     <span class="text-xs px-2 py-1 rounded-full bg-primary/10 text-primary font-medium">{tag}</span>
                   ))}
-                  {doctrine.data.tags?.length > 2 && (
+                  {doctrine.data.tags && doctrine.data.tags?.length > 2 && (
                     <span class="text-xs px-2 py-1 rounded-full bg-secondary/80 text-primary font-medium">+{doctrine.data.tags.length - 2}</span>
                   )}
                 </div>

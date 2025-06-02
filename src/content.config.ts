@@ -1,9 +1,8 @@
 import { glob } from 'astro/loaders'
 import { defineCollection, z } from 'astro:content'
-import { getAllAnecdote } from './lib/data-utils'
 
-const practice = defineCollection({
-  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/practice' }),
+const exercises = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/exercise' }),
   schema: ({ image }) =>
     z.object({
       title: z.string(),
@@ -70,4 +69,4 @@ const projects = defineCollection({
       endDate: z.coerce.date().optional(),
     }),
 })
-export const collections = { practice, doubts, anecdotes, projects }
+export const collections = { exercises, doubts, anecdotes, projects }

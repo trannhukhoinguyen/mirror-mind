@@ -4,12 +4,12 @@ import { buttonVariants } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { Icon } from 'astro-icon/components'
 
-const { prevPost, nextPost } = Astro.props
+const { prevPost, nextPost, path } = Astro.props
 ---
 
 <nav class="col-start-2 grid grid-cols-1 gap-4 sm:grid-cols-2">
   <Link
-    href={prevPost ? `/practice/${prevPost.id}` : '#'}
+    href={prevPost && path ? `${path}/${prevPost.id}` : '#'}
     class={cn(
       buttonVariants({ variant: 'outline' }),
       'rounded-xl group flex items-center justify-start size-full',
@@ -29,7 +29,7 @@ const { prevPost, nextPost } = Astro.props
     </div>
   </Link>
   <Link
-    href={nextPost ? `/practice/${nextPost.id}` : '#'}
+    href={nextPost && path ? `${path}/${nextPost.id}` : '#'}
     class={cn(
       buttonVariants({ variant: 'outline' }),
       'rounded-xl group flex items-center justify-end size-full',

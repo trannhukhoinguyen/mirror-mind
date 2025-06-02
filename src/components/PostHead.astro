@@ -3,7 +3,7 @@ import { SITE } from '@/consts'
 import type { CollectionEntry } from 'astro:content'
 
 interface Props {
-  post: CollectionEntry<'practice'>
+  post: CollectionEntry<'anecdotes'> | CollectionEntry<'doubts'> | CollectionEntry<'exercises'>
 }
 
 const { post } = Astro.props

@@ -1,25 +1,26 @@
 import { getCollection, type CollectionEntry } from 'astro:content'
+import ExerciseCardJSX from '@/components/react/exercise-card.tsx'
 
-// Type Blog: Practice
-export async function getAllPractice(): Promise<CollectionEntry<'practice'>[]> {
-  const posts = await getCollection('practice')
+// Type Blog: Exercise
+export async function getAllExercise(): Promise<CollectionEntry<'exercises'>[]> {
+  const posts = await getCollection('exercises')
   return posts
     .filter((post) => !post.data.draft)
     .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
 }
 
-export async function getRecentPractice(
+export async function getRecentExercise(
   count: number,
-): Promise<CollectionEntry<'practice'>[]> {
-  const posts = await getAllPractice()
+): Promise<CollectionEntry<'exercises'>[]> {
+  const posts = await getAllExercise()
   return posts.slice(0, count)
 }
 
-export async function getAdjacentPractice(currentId: string): Promise<{
-  prev: CollectionEntry<'practice'> | null
-  next: CollectionEntry<'practice'> | null
+export async function getAdjacentExercise(currentId: string): Promise<{
+  prev: CollectionEntry<'exercises'> | null
+  next: CollectionEntry<'exercises'> | null
 }> {
-  const posts = await getAllPractice()
+  const posts = await getAllExercise()
   const currentIndex = posts.findIndex((post) => post.id === currentId)
 
   if (currentIndex === -1) {
@@ -32,11 +33,11 @@ export async function getAdjacentPractice(currentId: string): Promise<{
   }
 }
 
-export function groupPracticeByYear(
-  posts: CollectionEntry<'practice'>[],
-): Record<string, CollectionEntry<'practice'>[]> {
+export function groupExerciseByYear(
+  posts: CollectionEntry<'exercises'>[],
+): Record<string, CollectionEntry<'exercises'>[]> {
   return posts.reduce(
-    (acc: Record<string, CollectionEntry<'practice'>[]>, post) => {
+    (acc: Record<string, CollectionEntry<'exercises'>[]>, post) => {
       const year = post.data.date.getFullYear().toString()
       ;(acc[year] ??= []).push(post)
       return acc
@@ -45,17 +46,17 @@ export function groupPracticeByYear(
   )
 }
 
-export async function getPracticeByAuthor(
+export async function getExerciseByAuthor(
   authorId: string,
-): Promise<CollectionEntry<'practice'>[]> {
-  const posts = await getAllPractice()
+): Promise<CollectionEntry<'exercises'>[]> {
+  const posts = await getAllExercise()
   return posts.filter((post) => post.data.authors?.includes(authorId))
 }
 
-export async function getPracticeByTag(
+export async function getExerciseByTag(
   tag: string,
-): Promise<CollectionEntry<'practice'>[]> {
-  const posts = await getAllPractice()
+): Promise<CollectionEntry<'exercises'>[]> {
+  const posts = await getAllExercise()
   return posts.filter((post) => post.data.tags?.includes(tag))
 }
 
@@ -137,11 +138,11 @@ export async function getDoctrinesFeaturedTags(maxCount: number): Promise<string
 
 // All Tags
 export async function getAllTags(): Promise<Map<string, number>> {
-  const practices = await getAllPractice()
+  const exercises = await getAllExercise()
   const doubts = await getAllDoubt()
   const anecdotes = await getAllAnecdote()
   const posts = [
-    ...practices,
+    ...exercises,
     ...doubts,
     ...anecdotes,
   ]
