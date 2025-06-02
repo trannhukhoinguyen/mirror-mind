@@ -190,7 +190,14 @@ export async function GET(context: APIContext) {
 }
 
 export async function getStaticPaths() {
-  const posts = await getCollection('practice')
+  const exercises = await getCollection('exercises')
+  const doubts = await getCollection('doubts')
+  const anecdotes = await getCollection('anecdotes')
+  const posts = [
+    ...exercises,
+    ...doubts,
+    ...anecdotes,
+  ]
   return posts.map((post) => ({
     params: {
       id: post.id,

@@ -45,30 +45,30 @@ export async function GET(context: APIContext) {
       }
     ]
 
-    const exercisePosts = exercises.map(practice => ({
-      url: `${baseUrl}/exercises/${practice.id}/`,
-      lastmod: practice.data.date.toISOString(),
+    const exercisePosts = exercises.map(post => ({
+      url: `${baseUrl}/exercises/${post.id}/`,
+      lastmod: post.data.date.toISOString(),
       changefreq: 'monthly',
       priority: '0.6'
     }))
 
-    const doubtPosts = doubts.map(practice => ({
-      url: `${baseUrl}/doubts/${practice.id}/`,
-      lastmod: practice.data.date.toISOString(),
+    const doubtPosts = doubts.map(post => ({
+      url: `${baseUrl}/doubts/${post.id}/`,
+      lastmod: post.data.date.toISOString(),
       changefreq: 'monthly',
       priority: '0.6'
     }))
 
-    const anecdotePosts = anecdotes.map(practice => ({
-      url: `${baseUrl}/anecdotes/${practice.id}/`,
-      lastmod: practice.data.date.toISOString(),
+    const anecdotePosts = anecdotes.map(post => ({
+      url: `${baseUrl}/anecdotes/${post.id}/`,
+      lastmod: post.data.date.toISOString(),
       changefreq: 'monthly',
       priority: '0.6'
     }))
 
-    const doctrinePosts = doctrines.map(doctrine => ({
-      url: `${baseUrl}/doctrines/${doctrine.id}/`,
-      lastmod: (doctrine.data.endDate ?? new Date()).toISOString(),
+    const doctrinePosts = doctrines.map(post => ({
+      url: `${baseUrl}/doctrines/${post.id}/`,
+      lastmod: (post.data.endDate ?? new Date()).toISOString(),
       changefreq: 'monthly',
       priority: '0.6'
     }))
