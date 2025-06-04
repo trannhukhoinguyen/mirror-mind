@@ -4,8 +4,23 @@ import PageHead from '@/components/PageHead.astro'
 import { buttonVariants } from '@/components/ui/button'
 import Layout from '@/layouts/Layout.astro'
 import { cn } from '@/lib/utils'
+import NeonGlassmorphismTimeline from '../components/NeonGlassmorphismTimeline.astro'
 
 const currentUrl = Astro.url;
+const list = [
+  {
+    id: 1,
+    title: 'titletitletitletitletitle',
+    date: '2025',
+    content: 'contentcontentcontentcontentcontentcontent',
+  },
+  {
+    id: 2,
+    title: 'titletitletitletitletitle',
+    date: '2025',
+    content: 'contentcontentcontentcontent',
+  },
+];
 ---
 
 <Layout canonicalUrl={currentUrl}>
@@ -26,4 +41,6 @@ const currentUrl = Astro.url;
       > Go to home page
     </Link>
   </section>
+
+<!--  <NeonGlassmorphismTimeline list={list} />-->
 </Layout>
