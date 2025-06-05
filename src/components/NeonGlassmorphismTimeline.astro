@@ -26,10 +26,6 @@ const { list } = Astro.props;
 </div>
 
 <style>
-  html {
-    background-color: rgb(18, 21, 33);
-  }
-
   .timeline {
     max-width: 800px;
     margin: 0 auto;
@@ -70,29 +66,29 @@ const { list } = Astro.props;
   }
 
   .timeline-date {
-    color: #6b7280;
+    color: var(--extra-foreground);
     font-size: 0.875rem;
     margin-left: 1rem;
   }
 
   .timeline-title {
-    color: #fff;
+    color: var(--foreground);
     font-size: 1.125rem;
     font-weight: 600;
   }
 
   .timeline-content {
-    color: #d1dae6;
+    color: var(--foreground);
     line-height: 1.5;
     margin-bottom: 1rem;
   }
 
   .timeline-item:hover::before {
-    box-shadow: 0 0px 15px rgba(223, 221, 255, 0.957);
+    box-shadow: 0 0 15px rgba(223, 221, 255, 0.957);
   }
 
   .timeline-title:hover, .timeline-date:hover, .timeline-content:hover {
-    text-shadow: 0 0px 15px rgba(223, 221, 255, 0.957);
+    text-shadow: 0 0 15px rgba(223, 221, 255, 0.957);
   }
 
   @media (max-width: 640px) {
