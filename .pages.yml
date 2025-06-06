@@ -1,12 +1,3 @@
-backend:
-  name: github
-  repo: trannhukhoinguyen/zero-mind
-  branch: main
-  auth_scope: repo
-  base_url: https://your-auth-server.com
-  auth_endpoint: oauth/authorize
-  token_endpoint: oauth/token
-
 content:
   - name: doctrines
     label: Doctrines
@@ -38,8 +29,9 @@ content:
         label: Body
         type: rich-text
 
-media_folder: "public/images/uploads"
-public_folder: "/images/uploads"
+media:
+  input: public/static
+  output: public/static
 
 
 
