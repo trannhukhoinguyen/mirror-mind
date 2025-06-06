@@ -66,6 +66,7 @@ const projects = defineCollection({
       image: image(),
       link: z.string().url(),
       startDate: z.coerce.date().optional(),
+      endDate: z.coerce.date().optional(),
     }),
 })
 export const collections = { exercises, doubts, anecdotes, projects }
