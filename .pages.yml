@@ -17,7 +17,7 @@ content:
         
       - name: tags
         label: Tags
-        type: text
+        type: tags
 
       - name: startDate
         label: Start date
