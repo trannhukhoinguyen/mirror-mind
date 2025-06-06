@@ -1,0 +1,45 @@
+backend:
+  name: github
+  repo: trannhukhoinguyen/zero-mind
+  branch: main
+  auth_scope: repo
+  base_url: https://your-auth-server.com
+  auth_endpoint: oauth/authorize
+  token_endpoint: oauth/token
+
+content:
+  - name: doctrines
+    label: Doctrines
+    path: src/content/projects
+    filename: '{name}.md'
+    type: collection
+    view:
+      fields: [heroImage, title, pubDate]
+    fields:
+      - name: name
+        label: Title
+        type: string
+
+      - name: description
+        label: Description
+        type: text
+
+      - name: startDate
+        label: Start Date
+        type: date
+        options:
+          format: MM/dd/yyyy
+
+      - name: image
+        label: Image
+        type: image
+
+      - name: body
+        label: Body
+        type: rich-text
+
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+
+
