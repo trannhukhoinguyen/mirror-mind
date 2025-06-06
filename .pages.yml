@@ -7,39 +7,52 @@ backend:
   auth_endpoint: oauth/authorize
   token_endpoint: oauth/token
 
-content:
-  - name: doctrines
-    label: Doctrines
-    path: src/content/projects
-    filename: '{name}.md'
-    type: collection
-    view:
-      fields: [heroImage, title, pubDate]
+collections:
+  - name: "exercises"
+    label: "Exercises"
+    folder: "src/content/exercises"
+    create: true
+    slug: "{{slug}}"
     fields:
-      - name: name
-        label: Title
-        type: string
+      - { name: title, label: Title, widget: string }
+      - { name: description, label: Description, widget: text, required: false }
+      - { name: date, label: Date, widget: datetime }
+      - { name: image, label: Image, widget: image, required: false }
+      - { name: tags, label: Tags, widget: list, required: false }
+      - { name: authors, label: Authors, widget: list, required: false }
+      - { name: draft, label: Draft, widget: boolean, required: false }
 
-      - name: description
-        label: Description
-        type: text
+  - name: "doubts"
+    label: "Doubts"
+    folder: "src/content/doubts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: description, label: Description, widget: text, required: false }
+      - { name: date, label: Date, widget: datetime }
+      - { name: image, label: Image, widget: image, required: false }
+      - { name: tags, label: Tags, widget: list, required: false }
+      - { name: authors, label: Authors, widget: list, required: false }
+      - { name: draft, label: Draft, widget: boolean, required: false }
 
-      - name: startDate
-        label: Start Date
-        type: date
-        options:
-          format: MM/dd/yyyy
+  - name: "anecdotes"
+    label: "Anecdotes"
+    folder: "src/content/anecdotes"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: description, label: Description, widget: text, required: false }
+      - { name: date, label: Date, widget: datetime }
+      - { name: image, label: Image, widget: image, required: false }
+      - { name: tags, label: Tags, widget: list, required: false }
+      - { name: authors, label: Authors, widget: list, required: false }
+      - { name: draft, label: Draft, widget: boolean, required: false }
 
-      - name: image
-        label: Image
-        type: image
-
-      - name: body
-        label: Body
-        type: rich-text
-
-media_folder: "public/images/uploads"
-public_folder: "/images/uploads"
+media:
+  input: public/static
+  output: public/static
 
 
 
