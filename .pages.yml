@@ -5,7 +5,7 @@ content:
     filename: '{name}.md'
     type: collection
     view:
-      fields: [heroImage, title, pubDate]
+      fields: [image, name, startDate]
     fields:
       - name: name
         label: Title
@@ -14,12 +14,16 @@ content:
       - name: description
         label: Description
         type: text
+        
+      - name: tags
+        label: Tags
+        type: text
 
       - name: startDate
-        label: Start Date
+        label: Start date
         type: date
         options:
-          format: MM/dd/yyyy
+          format: YYYY/MM/DD
 
       - name: image
         label: Image
