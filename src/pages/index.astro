@@ -1,13 +1,44 @@
 ---
 import Minds from '@/components/react/minds'
 import Layout from '@/layouts/Layout.astro'
+import CircleHorizontalTimeline from '../components/CircleHorizontalTimeline.astro'
 
 const currentUrl = Astro.url;
 const title = "Practise Patriarchal Zen";
+const events = [
+  {
+    id: 1,
+    year: '2021',
+    content: 'Thiền sư Nham Đầu & Thiền sư Tuyết Phong trên Ngao Sơn',
+  },
+  {
+    id: 2,
+    year: '2022',
+    content: 'Thiền sư Nham Đầu & Thiền sư Tuyết Phong trên Ngao Sơn',
+  },
+  {
+    id: 3,
+    year: '2023',
+    content: 'Thiền sư Nham Đầu & Thiền sư Tuyết Phong trên Ngao Sơn',
+  },
+  {
+    id: 4,
+    year: '2024',
+    content: 'Thiền sư Nham Đầu & Thiền sư Tuyết Phong trên Ngao Sơn',
+  },
+  {
+    id: 5,
+    year: '2025',
+    content: 'Thiền sư Nham Đầu & Thiền sư Tuyết Phong trên Ngao Sơn',
+  },
+];
 ---
 
-<Layout canonicalUrl={currentUrl}>
+<Layout canonicalUrl={currentUrl} title={title}>
   <section class="flex flex-col gap-y-12 px-4 py-8 sm:px-8 lg:px-16">
+    <section class="relative" aria-labelledby="minds-title">
+      <CircleHorizontalTimeline events={events} />
+    </section>
     <section class="relative" aria-labelledby="minds-title">
       <div>
         <Minds client:load />
