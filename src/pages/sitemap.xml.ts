@@ -42,6 +42,18 @@ export async function GET(context: APIContext) {
         lastmod: new Date().toISOString(),
         changefreq: 'weekly',
         priority: '0.8'
+      },
+      {
+        url: `${baseUrl}/doubts`,
+        lastmod: new Date().toISOString(),
+        changefreq: 'weekly',
+        priority: '0.8'
+      },
+      {
+        url: `${baseUrl}/anecdotes`,
+        lastmod: new Date().toISOString(),
+        changefreq: 'weekly',
+        priority: '0.8'
       }
     ]
 
