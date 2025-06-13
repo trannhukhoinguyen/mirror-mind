@@ -44,6 +44,8 @@ const structuredData = {
 const currentUrl = Astro.url;
 const title = 'Thực hành';
 const href = '/exercises';
+const src = '/images/white-silk-sheet/white-silk-sheet-1.png';
+const alt = 'White Silk Sheet';
 ---
 
 <Layout canonicalUrl={currentUrl} isWide={true}>
@@ -110,6 +112,7 @@ const href = '/exercises';
     {headings.length > 0 && <TableOfContents headings={headings} />}
 
     <article class="prose col-start-2 max-w-none">
+      <img src={src} alt={alt} />
       <Content />
     </article>
 

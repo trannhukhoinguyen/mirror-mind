@@ -1,0 +1,286 @@
+---
+
+---
+
+<div class="container-wrap">
+  <div class="container">
+    <div class="timeline-wrap">
+      <div class="timeline-inner">
+        <div class="content content_1">
+          <div class="circle circle1"></div>
+          <div class="rectangle rectangle1"></div>
+          <div>
+            <div class="items">
+              <div class="item">Driving innovation<br>forward</div>
+            </div>
+            <div class="logo">
+              <img src="https://cdn.cdnlogo.com/logos/a/22/ashland-eagles.svg" alt="eagles">
+            </div>
+          </div>
+        </div>
+        <div class="content content_2">
+          <div class="circle circle2"></div>
+          <div class="rectangle rectangle2"></div>
+          <div>
+            <div class="items">
+              <div class="item">through</div>
+            </div>
+            <div class="logo">
+              <img src="https://cdn.cdnlogo.com/logos/m/19/marist-red-foxes.svg" alt="foxes">
+            </div>
+          </div>
+        </div>
+        <div class="content content_3">
+          <div class="circle circle3"></div>
+          <div class="rectangle rectangle3"></div>
+          <div>
+            <div class="items">
+              <div class="item">core focus on</div>
+            </div>
+            <div class="logo">
+              <div class="logo-text">
+                Exploration and Partnerships
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content content_4">
+          <div class="circle circle4"></div>
+          <div class="rectangle rectangle4"></div>
+          <div>
+            <div class="items">
+              <div class="item">to enable</div>
+            </div>
+            <div class="logo">
+              <div class="logo-text">
+                Transformative Industry Growth
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="arrow">
+          <svg class="arrow1" xmlns="http://www.w3.org/2000/svg" width="956" height="1365" viewBox="0 0 956 1365" fill="none">
+            <path id="Polygon 1" d="M433.362 1360L949.5 682.5L433.362 5L11 5L527.5 682.5L11 1360H433.362Z" fill="#B6D12F" stroke="#B6D12F" stroke-width="10" />
+          </svg>
+          <svg class="arrow2" xmlns="http://www.w3.org/2000/svg" width="956" height="1365" viewBox="0 0 956 1365" fill="none">
+            <path id="Polygon 1" d="M433.362 1360L949.5 682.5L433.362 5L11 5L527.5 682.5L11 1360H433.362Z" stroke="white" stroke-width="10" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+  }
+  .container-wrap {
+    //background: #000;
+    padding: 300px 0;
+  }
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1300px;
+    }
+  }
+  .timeline-wrap {
+    //color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding-left: 30px;
+    max-width: 1270px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .timeline-inner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .timeline-wrap:before {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 30px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    //background-color: #f00;
+    transform: translateY(-50%);
+  }
+
+  .timeline-wrap .content {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+  }
+
+  .timeline-wrap .content > div {
+    width: 100%;
+    text-align: center;
+  }
+
+  .timeline-wrap .items {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .timeline-wrap .logo-text {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .timeline-wrap .content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .timeline-wrap .content_4 {
+    color: #b6d12f;
+  }
+
+  .timeline-wrap .content_3 {
+    color: #fbb813;
+  }
+
+  .timeline-wrap .content_2 {
+    color: #df168c;
+  }
+
+  .timeline-wrap .content_1 {
+    color: #f00;
+  }
+
+  .timeline-wrap .content .logo img {
+    width: 10vw;
+    max-width: 180px;
+  }
+
+  .timeline-wrap .items {
+    font-size: calc(0.4vw + 16px);
+    line-height: 1.2;
+  }
+
+  .timeline-wrap .logo-text {
+    font-size: calc(0.5vw + 20px);
+  }
+
+  .timeline-wrap .arrow {
+    height: 300px;
+    display: block;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .timeline-wrap .arrow svg {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    left: -25%;
+  }
+
+  .timeline-wrap .arrow .arrow2 {
+    z-index: -1;
+  }
+
+  .timeline-wrap .content > .circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 4px solid;
+    flex: 1 0 30px;
+    position: absolute;
+    z-index: -2;
+    left: 0;
+    opacity: 0;
+  }
+
+  .timeline-wrap .content > .circle1 {
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+  }
+
+  .timeline-wrap .content > .rectangle {
+    width: 15%;
+    height: 100%;
+    flex: 1 0 150px;
+    position: absolute;
+    //background-color: #000;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  .timeline-wrap .content > .rectangle1 {
+    left: -30px;
+  }
+
+  .logo,
+  .items {
+    opacity: 0;
+  }
+
+  @media (max-width: 991px) and (min-width: 768px) {
+    .timeline-wrap .content > .circle {
+      width: 20px;
+      height: 20px;
+    }
+
+    .timeline-wrap .content > .circle1 {
+      width: 40px;
+      height: 40px;
+    }
+
+    .timeline-wrap .items {
+      font-size: calc(0.2vw + 11px);
+    }
+    .timeline-wrap .logo-text {
+      font-size: calc(0.5vw + 12px);
+    }
+    .timeline-wrap .content .logo img {
+      width: 8vw;
+    }
+  }
+</style>
+
+<script is:inline src="/src/scripts/gsap-global.js"></script>
