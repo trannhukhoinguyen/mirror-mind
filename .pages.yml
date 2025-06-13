@@ -36,9 +36,9 @@ collections:
       - { name: authors, label: Authors, widget: list, required: false }
       - { name: draft, label: Draft, widget: boolean, required: false }
 
-  - name: "anecdotes"
-    label: "Anecdotes"
-    folder: "src/content/anecdotes"
+  - name: "koans"
+    label: "Koans"
+    folder: "src/content/koans"
     create: true
     slug: "{{slug}}"
     fields:

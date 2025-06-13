@@ -1,17 +1,17 @@
 import { SITE } from '@/consts'
 import rss from '@astrojs/rss'
 import type { APIContext } from 'astro'
-import { getAllExercise, getAllDoubt, getAllAnecdote } from '@/lib/data-utils'
+import { getAllExercise, getAllDoubt, getAllKoan } from '@/lib/data-utils'
 
 export async function GET(context: APIContext) {
   try {
     const exercises = await getAllExercise()
     const doubts = await getAllDoubt()
-    const anecdotes = await getAllAnecdote()
+    const koans = await getAllKoan()
     const posts = [
       ...exercises,
       ...doubts,
-      ...anecdotes,
+      ...koans,
     ]
 
     return rss({
@@ -21,8 +21,8 @@ export async function GET(context: APIContext) {
       items: posts.map((post) => {
         const type = post.data.tags?.includes('nghi ngờ')
             ? 'doubt'
-            : post.data.tags?.includes('giai thoại')
-              ? 'anecdote'
+            : post.data.tags?.includes('công án')
+              ? 'koan'
               : 'exercise'
 
         return {

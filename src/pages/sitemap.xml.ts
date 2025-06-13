@@ -1,12 +1,12 @@
 import { SITE } from '@/consts'
 import type { APIContext } from 'astro'
-import { getAllExercise, getAllDoubt,  getAllAnecdote, getAllDoctrine, getAllTags } from '@/lib/data-utils'
+import { getAllExercise, getAllDoubt,  getAllKoan, getAllDoctrine, getAllTags } from '@/lib/data-utils'
 
 export async function GET(context: APIContext) {
   try {
     const exercises = await getAllExercise()
     const doubts = await getAllDoubt()
-    const anecdotes = await getAllAnecdote()
+    const koans = await getAllKoan()
     const doctrines = await getAllDoctrine()
     const tags = await getAllTags()
     const site = context.site ?? SITE.href
@@ -38,19 +38,7 @@ export async function GET(context: APIContext) {
         priority: '0.8'
       },
       {
-        url: `${baseUrl}/anecdotes`,
-        lastmod: new Date().toISOString(),
-        changefreq: 'weekly',
-        priority: '0.8'
-      },
-      {
-        url: `${baseUrl}/doubts`,
-        lastmod: new Date().toISOString(),
-        changefreq: 'weekly',
-        priority: '0.8'
-      },
-      {
-        url: `${baseUrl}/anecdotes`,
+        url: `${baseUrl}/koans`,
         lastmod: new Date().toISOString(),
         changefreq: 'weekly',
         priority: '0.8'
@@ -71,8 +59,8 @@ export async function GET(context: APIContext) {
       priority: '0.6'
     }))
 
-    const anecdotePosts = anecdotes.map(post => ({
-      url: `${baseUrl}/anecdotes/${post.id}/`,
+    const koanPosts = koans.map(post => ({
+      url: `${baseUrl}/koans/${post.id}/`,
       lastmod: post.data.date.toISOString(),
       changefreq: 'monthly',
       priority: '0.6'
@@ -92,7 +80,7 @@ export async function GET(context: APIContext) {
       priority: '0.5'
     }))
 
-    const allUrls = [...staticPages, ...doctrinePosts, ...exercisePosts, ...doubtPosts, ...anecdotePosts, ...tagUrls]
+    const allUrls = [...staticPages, ...doctrinePosts, ...exercisePosts, ...doubtPosts, ...koanPosts, ...tagUrls]
 
     const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">

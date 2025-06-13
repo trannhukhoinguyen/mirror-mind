@@ -29,8 +29,8 @@ const doubts = defineCollection({
     }),
 })
 
-const anecdotes = defineCollection({
-  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/anecdotes' }),
+const koans = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/koans' }),
   schema: ({ image }) =>
     z.object({
       title: z.string(),
@@ -63,10 +63,10 @@ const projects = defineCollection({
       name: z.string(),
       description: z.string().optional(),
       tags: z.array(z.string()).optional(),
-      image: image(),
+      image: image().optional(),
       link: z.string().url(),
       startDate: z.coerce.date().optional(),
       endDate: z.coerce.date().optional(),
     }),
 })
-export const collections = { exercises, doubts, anecdotes, projects }
+export const collections = { exercises, doubts, koans, projects }

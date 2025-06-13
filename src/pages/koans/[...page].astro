@@ -1,0 +1,62 @@
+---
+import Breadcrumbs from '@/components/Breadcrumbs.astro'
+import PageHead from '@/components/PageHead.astro'
+import Search from '@/components/react/search'
+import PaginationComponent from '@/components/ui/pagination'
+import Layout from '@/layouts/Layout.astro'
+import { getAllKoan } from '@/lib/data-utils'
+import type { PaginateFunction } from 'astro'
+import { Icon } from 'astro-icon/components'
+
+export async function getStaticPaths({
+  paginate,
+}: {
+  paginate: PaginateFunction
+}) {
+  const allPosts = await getAllKoan()
+  return paginate(allPosts, { pageSize: 5 })
+}
+
+const { page } = Astro.props
+const searchList = await getAllKoan()
+const currentUrl = Astro.url;
+const title = 'Công án';
+const href = '/koans';
+---
+
+<Layout canonicalUrl={currentUrl}>
+  <PageHead slot="head" title={title} />
+
+  <Breadcrumbs
+    items={[
+      { label: title, href: href, icon: 'lucide:archive' },
+      { label: `Page ${page.currentPage}`, icon: 'lucide:folder-open' },
+    ]}
+  />
+  <section class="max-screen mt-12 px-4 md:px-6">
+    <div class="flex w-fit items-center gap-2 text-primary">
+        <Icon class="h-4 w-4 text-secondary-foreground animate-pulse" name="lucide:brain" />
+        <p class="shimmer word-spacing font-mono text-sm uppercase leading-none text-secondary-foreground">
+          {title}
+        </p>
+    </div>
+    <h2
+    id="post-title"
+    class="font-custom text-foreground text-4xl font-bold mt-2"
+    >
+      {title}
+      <Icon name="lucide:star" class="h-4 w-4 text-yellow-500 animate-pulse float-right" />
+    </h2>
+
+    <div class="flex min-h-[calc(100vh-18rem)] flex-col gap-y-8 my-12">
+      <Search client:load searchList={searchList} initialPosts={page.data} />
+    </div>
+
+    <PaginationComponent
+      currentPage={page.currentPage}
+      totalPages={page.lastPage}
+      baseUrl={href}
+      client:load
+    />
+  </section>
+</Layout>

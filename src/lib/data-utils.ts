@@ -91,19 +91,19 @@ export async function getDoubtsByTag(
   return posts.filter((post) => post.data.tags?.includes(tag))
 }
 
-// Type Blog: Anecdote
-export async function getAllAnecdote(): Promise<CollectionEntry<'anecdotes'>[]> {
-  const posts = await getCollection('anecdotes')
+// Type Blog: Koan
+export async function getAllKoan(): Promise<CollectionEntry<'koans'>[]> {
+  const posts = await getCollection('koans')
   return posts
     .filter((post) => !post.data.draft)
     .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
 }
 
-export async function getAdjacentAnecdote(currentId: string): Promise<{
-  prev: CollectionEntry<'anecdotes'> | null
-  next: CollectionEntry<'anecdotes'> | null
+export async function getAdjacentKoan(currentId: string): Promise<{
+  prev: CollectionEntry<'koans'> | null
+  next: CollectionEntry<'koans'> | null
 }> {
-  const posts = await getAllAnecdote()
+  const posts = await getAllKoan()
   const currentIndex = posts.findIndex((post) => post.id === currentId)
 
   if (currentIndex === -1) {
@@ -116,10 +116,10 @@ export async function getAdjacentAnecdote(currentId: string): Promise<{
   }
 }
 
-export async function getAnecdotesByTag(
+export async function getKoansByTag(
   tag: string,
-): Promise<CollectionEntry<'anecdotes'>[]> {
-  const posts = await getAllAnecdote()
+): Promise<CollectionEntry<'koans'>[]> {
+  const posts = await getAllKoan()
   return posts.filter((post) => post.data.tags?.includes(tag))
 }
 
@@ -153,11 +153,11 @@ export async function getDoctrineFeaturedTags(maxCount: number): Promise<string[
 export async function getAllTags(): Promise<Map<string, number>> {
   const exercises = await getAllExercise()
   const doubts = await getAllDoubt()
-  const anecdotes = await getAllAnecdote()
+  const koans = await getAllKoan()
   const posts = [
     ...exercises,
     ...doubts,
-    ...anecdotes,
+    ...koans,
   ]
 
   return posts.reduce((acc, post) => {

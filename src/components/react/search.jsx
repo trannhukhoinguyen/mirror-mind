@@ -3,7 +3,7 @@ import { useState, useMemo, useCallback } from 'react'
 import { Input } from '@/components/ui/input'
 import ExerciseCardJSX from './exercise-card'
 import DoubtCardJSX from './doubt-card'
-import AnecdoteCardJSX from './anecdote-card'
+import KoanCardJSX from './koan-card'
 import debounce from 'lodash.debounce'
 import { cn } from '@/lib/utils'
 

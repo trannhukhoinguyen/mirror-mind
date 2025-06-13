@@ -1,6 +1,6 @@
 ---
 import { SITE } from '@/consts'
-import { getAllExercise, getAllAnecdote, getAllDoubt } from '../lib/data-utils'
+import { getAllExercise, getAllKoan, getAllDoubt } from '../lib/data-utils'
 interface Props {
   title?: string
   description?: string
@@ -10,11 +10,11 @@ const { title = SITE.title, description = SITE.description } = Astro.props
 const image = new URL('/ogImage.png', Astro.site).toString()
 const exercises = await getAllExercise()
 const doubts = await getAllDoubt()
-const anecdotes = await getAllAnecdote()
+const koans = await getAllKoan()
 const posts = [
   ...exercises,
   ...doubts,
-  ...anecdotes,
+  ...koans,
 ]
 ---
 

@@ -27,8 +27,8 @@ export const NAV_LINKS: SocialLink[] = [
     label: 'nghi ngờ',
   },
   {
-    href: '/anecdotes',
-    label: 'giai thoại',
+    href: '/koans',
+    label: 'công án',
   },
 ]
 

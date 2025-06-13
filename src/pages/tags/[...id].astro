@@ -3,9 +3,9 @@ import Breadcrumbs from '@/components/Breadcrumbs.astro'
 import PageHead from '@/components/PageHead.astro'
 import ExerciseCard from '@/components/react/exercise-card'
 import DoubtCard from '@/components/react/doubt-card'
-import AnecdoteCard from '@/components/react/anecdote-card'
+import KoanCard from '@/components/react/koan-card'
 import Layout from '@/layouts/Layout.astro'
-import { getAllTags, getExercisesByTag, getDoubtsByTag, getAnecdotesByTag } from '@/lib/data-utils'
+import { getAllTags, getExercisesByTag, getDoubtsByTag, getKoansByTag } from '@/lib/data-utils'
 import { Icon } from 'astro-icon/components'
 
 export async function getStaticPaths() {
@@ -16,21 +16,21 @@ export async function getStaticPaths() {
     uniqueTags.map(async (tag) => {
       const exercises = await getExercisesByTag(tag)
       const doubts = await getDoubtsByTag(tag)
-      const anecdotes = await getAnecdotesByTag(tag)
+      const koans = await getKoansByTag(tag)
       return {
         params: { id: tag },
         props: {
           tag,
           exercises,
           doubts,
-          anecdotes,
+          koans,
         },
       }
     })
   )
 }
 
-const { tag, exercises, doubts, anecdotes } = Astro.props
+const { tag, exercises, doubts, koans } = Astro.props
 const currentUrl = Astro.url;
 ---
 
@@ -74,9 +74,9 @@ const currentUrl = Astro.url;
     }
 
     {
-      anecdotes.map(item => (
+      koans.map(item => (
         <li>
-          <AnecdoteCard entry={item} />
+          <KoanCard entry={item} />
         </li>
       ))
     }
