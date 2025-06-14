@@ -76,7 +76,7 @@ function Search({ searchList, initialPosts }) {
           id="search"
           autoComplete="off"
           autoCorrect="off"
-          placeholder="Search practice"
+          placeholder="Bạn tìm gì?"
           className="w-full outline-none focus:ring-0 dark:bg-neutral-900 dark:text-white"
         />
       </div>
