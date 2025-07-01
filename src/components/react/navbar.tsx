@@ -134,7 +134,9 @@ const Navbar = () => {
             title="Home"
             navigation="true"
           >
-            <Logo className="h-8 w-8" />
+            {/*<Logo className="h-8 w-8" />*/}
+            <img className="h-8 w-8" src="/logo.png" alt="zen-mind" />
+
             <span className={
               'transition-opacity duration-200 ease-in-out text-foreground/90 dark:text-white'}>
               {SITE.title}
